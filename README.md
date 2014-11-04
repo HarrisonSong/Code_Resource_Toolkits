@@ -1,4 +1,4 @@
 CodeSnippet
 ===========
 
-some code from coding challenges
+Useful code collection
