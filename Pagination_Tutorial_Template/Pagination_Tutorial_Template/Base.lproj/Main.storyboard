@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ISu-96-wrd">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="aIW-RK-Qj7">
+            <objects>
+                <viewController id="ISu-96-wrd" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jt3-jO-NKe"/>
+                        <viewControllerLayoutGuide type="bottom" id="2C5-P3-Gd4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sU9-5c-m8b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYI-dh-kBq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="9" translatesAutoresizingMaskIntoConstraints="NO" id="bI1-aW-3Tx">
+                                        <rect key="frame" x="90" y="523" width="140" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="8kd-AQ-sGy"/>
+                                        </constraints>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bI1-aW-3Tx" secondAttribute="bottom" constant="8" id="Eyb-tp-oNW"/>
+                                    <constraint firstAttribute="centerX" secondItem="bI1-aW-3Tx" secondAttribute="centerX" id="XAy-Fv-tQo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iYI-dh-kBq" secondAttribute="trailing" id="4SM-Hx-iRX"/>
+                            <constraint firstItem="iYI-dh-kBq" firstAttribute="top" secondItem="sU9-5c-m8b" secondAttribute="topMargin" id="Huc-Vi-CjN"/>
+                            <constraint firstItem="iYI-dh-kBq" firstAttribute="leading" secondItem="sU9-5c-m8b" secondAttribute="leading" id="bY8-9L-YGJ"/>
+                            <constraint firstItem="iYI-dh-kBq" firstAttribute="bottom" secondItem="sU9-5c-m8b" secondAttribute="bottomMargin" id="x5C-WT-ryd"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="PageControl" destination="bI1-aW-3Tx" id="xdR-GF-WKN"/>
+                        <outlet property="PageViewContainer" destination="iYI-dh-kBq" id="DRp-bv-ADD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ryu-BH-Heu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="350"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="oO8-fK-Di4">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="tMr-zU-L8t" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pny-Xa-DK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="411" y="350"/>
+        </scene>
+        <!--Tour Page View Controller-->
+        <scene sceneID="uXV-eh-KVZ">
+            <objects>
+                <viewController storyboardIdentifier="TourPage" id="6fx-DY-dV4" customClass="TourPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kZI-pT-R79"/>
+                        <viewControllerLayoutGuide type="bottom" id="OSi-NF-b87"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Ar-Un-ieu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e9O-Pc-3CP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e9O-Pc-3CP" firstAttribute="top" secondItem="1Ar-Un-ieu" secondAttribute="top" id="ArK-3v-1cg"/>
+                            <constraint firstItem="e9O-Pc-3CP" firstAttribute="bottom" secondItem="1Ar-Un-ieu" secondAttribute="bottomMargin" id="hil-OV-soa"/>
+                            <constraint firstItem="e9O-Pc-3CP" firstAttribute="leading" secondItem="1Ar-Un-ieu" secondAttribute="leading" id="lRb-ha-vb0"/>
+                            <constraint firstAttribute="trailing" secondItem="e9O-Pc-3CP" secondAttribute="trailing" id="s6g-gm-lz2"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="TourImage" destination="e9O-Pc-3CP" id="oaR-Q1-AQA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3P-lt-ujv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="350"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
