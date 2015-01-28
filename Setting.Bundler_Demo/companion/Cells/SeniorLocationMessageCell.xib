@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SeniorLocationMessageCell" rowHeight="179" id="KGk-i7-Jjw" customClass="SeniorLocationMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17/03/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C49-KQ-9ec">
+                        <rect key="frame" x="8" y="8" width="304" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="obk-dN-E1i"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSD-oN-REf" userLabel="Message Container">
+                        <rect key="frame" x="8" y="30" width="231" height="118"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5C3-qv-n3D">
+                                <rect key="frame" x="8" y="8" width="26" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="l2R-cy-Op2"/>
+                                    <constraint firstAttribute="height" constant="38" id="qZm-Vo-jkT"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="LocationIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Have a great weekend! Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SL2-qg-S9K">
+                                <rect key="frame" x="42" y="8" width="181" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="181" id="CUA-vu-0Tl"/>
+                                    <constraint firstAttribute="height" priority="750" constant="117" id="Fzv-9x-hnV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5C3-qv-n3D" firstAttribute="leading" secondItem="wSD-oN-REf" secondAttribute="leading" constant="8" id="E31-R9-4wQ"/>
+                            <constraint firstItem="SL2-qg-S9K" firstAttribute="leading" secondItem="5C3-qv-n3D" secondAttribute="trailing" constant="8" id="JuF-ZR-eJg"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="N0s-vb-jKt"/>
+                            <constraint firstItem="SL2-qg-S9K" firstAttribute="top" secondItem="wSD-oN-REf" secondAttribute="top" constant="8" id="PyH-G1-FhS"/>
+                            <constraint firstItem="5C3-qv-n3D" firstAttribute="top" secondItem="wSD-oN-REf" secondAttribute="top" constant="8" id="Qsh-Md-vSp"/>
+                            <constraint firstItem="SL2-qg-S9K" firstAttribute="leading" secondItem="wSD-oN-REf" secondAttribute="leading" priority="750" constant="8" id="Qxo-TH-mbq"/>
+                            <constraint firstAttribute="bottom" secondItem="SL2-qg-S9K" secondAttribute="bottom" constant="8" id="qmK-33-6SG"/>
+                            <constraint firstAttribute="trailing" secondItem="SL2-qg-S9K" secondAttribute="trailing" constant="8" id="yWd-Qv-XDW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wSD-oN-REf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="8RB-KJ-LXu"/>
+                    <constraint firstItem="wSD-oN-REf" firstAttribute="top" secondItem="C49-KQ-9ec" secondAttribute="bottom" id="FZn-xo-2Sa"/>
+                    <constraint firstItem="C49-KQ-9ec" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="cqq-q7-InS"/>
+                    <constraint firstItem="C49-KQ-9ec" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="feT-jn-L3P"/>
+                    <constraint firstItem="C49-KQ-9ec" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="jnd-4x-JT9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="MapButton" destination="5C3-qv-n3D" id="edM-Tw-i55"/>
+                <outlet property="MessageContainer" destination="wSD-oN-REf" id="G6F-4w-XHG"/>
+                <outlet property="MessageContent" destination="SL2-qg-S9K" id="Pcu-0X-zMC"/>
+                <outlet property="MessageDate" destination="C49-KQ-9ec" id="ha1-nv-7sP"/>
+            </connections>
+            <point key="canvasLocation" x="317" y="362.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="LocationIcon" width="23" height="31"/>
+    </resources>
+</document>

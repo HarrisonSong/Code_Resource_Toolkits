@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SeniorVideoMessageCell" rowHeight="366" id="KGk-i7-Jjw" customClass="SeniorVideoMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="390"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FyP-KC-p12" userLabel="Message Container">
+                        <rect key="frame" x="8" y="30" width="256" height="346"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SRq-al-Pza">
+                                <rect key="frame" x="8" y="8" width="240" height="240"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Wfn-is-zIM"/>
+                                    <constraint firstAttribute="height" constant="240" id="Zd4-Dr-4RU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlayVideoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qOP-Ab-hTd" userLabel="PlayVideoButton">
+                                <rect key="frame" x="103" y="103" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="j21-Db-ku8"/>
+                                    <constraint firstAttribute="height" constant="50" id="yuX-9d-3aa"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="doP-do-kJL">
+                                <rect key="frame" x="110" y="110" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtd-Tc-ZCW">
+                                <rect key="frame" x="8" y="8" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Qxz-SZ-7b2"/>
+                                    <constraint firstAttribute="height" constant="240" id="u0C-mb-S27"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Have a great weekend! Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYo-oK-iYy">
+                                <rect key="frame" x="8" y="256" width="240" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="yW1-7e-eHA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qOP-Ab-hTd" firstAttribute="centerX" secondItem="SRq-al-Pza" secondAttribute="centerX" id="5mr-SP-1ns"/>
+                            <constraint firstItem="qOP-Ab-hTd" firstAttribute="centerY" secondItem="SRq-al-Pza" secondAttribute="centerY" id="60K-QQ-obM"/>
+                            <constraint firstAttribute="trailing" secondItem="lYo-oK-iYy" secondAttribute="trailing" constant="8" id="62H-FH-h1O"/>
+                            <constraint firstItem="SRq-al-Pza" firstAttribute="top" secondItem="FyP-KC-p12" secondAttribute="top" constant="8" id="8pR-Xk-fdg"/>
+                            <constraint firstItem="lYo-oK-iYy" firstAttribute="leading" secondItem="FyP-KC-p12" secondAttribute="leading" constant="8" id="MG3-wD-l0R"/>
+                            <constraint firstItem="SRq-al-Pza" firstAttribute="centerY" secondItem="Xtd-Tc-ZCW" secondAttribute="centerY" id="MUE-WK-MMB"/>
+                            <constraint firstItem="lYo-oK-iYy" firstAttribute="top" secondItem="SRq-al-Pza" secondAttribute="bottom" constant="8" id="PaU-fv-gbV"/>
+                            <constraint firstItem="SRq-al-Pza" firstAttribute="leading" secondItem="FyP-KC-p12" secondAttribute="leading" constant="8" id="QnW-h6-lYx"/>
+                            <constraint firstItem="SRq-al-Pza" firstAttribute="centerY" secondItem="doP-do-kJL" secondAttribute="centerY" id="Xz2-Cm-TmP"/>
+                            <constraint firstItem="SRq-al-Pza" firstAttribute="centerX" secondItem="Xtd-Tc-ZCW" secondAttribute="centerX" id="bDr-DC-TE3"/>
+                            <constraint firstAttribute="trailing" secondItem="SRq-al-Pza" secondAttribute="trailing" constant="8" id="jJb-o5-NtI"/>
+                            <constraint firstAttribute="bottom" secondItem="lYo-oK-iYy" secondAttribute="bottom" constant="8" id="kFf-0u-9UB"/>
+                            <constraint firstItem="SRq-al-Pza" firstAttribute="centerX" secondItem="doP-do-kJL" secondAttribute="centerX" id="psa-BX-aPg"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17/03/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kd7-EB-0F1">
+                        <rect key="frame" x="8" y="8" width="304" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="yoj-Hj-e34"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kd7-EB-0F1" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="4KO-vt-gLW"/>
+                    <constraint firstItem="kd7-EB-0F1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="6nK-wd-d9q"/>
+                    <constraint firstItem="FyP-KC-p12" firstAttribute="top" secondItem="kd7-EB-0F1" secondAttribute="bottom" id="RHp-LZ-i94"/>
+                    <constraint firstItem="FyP-KC-p12" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="WL9-CI-jAU"/>
+                    <constraint firstItem="kd7-EB-0F1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="j3K-EY-1Do"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="MessageContainer" destination="FyP-KC-p12" id="7Le-GT-Lj4"/>
+                <outlet property="MessageContent" destination="lYo-oK-iYy" id="Wfo-oM-a0b"/>
+                <outlet property="MessageDate" destination="kd7-EB-0F1" id="vBl-2t-1dh"/>
+                <outlet property="MessageVideoPhoto" destination="SRq-al-Pza" id="fbJ-Ki-poY"/>
+                <outlet property="VideoButton" destination="Xtd-Tc-ZCW" id="AEx-bU-guQ"/>
+                <outlet property="VideoLoadingView" destination="doP-do-kJL" id="WNW-VN-m1e"/>
+            </connections>
+            <point key="canvasLocation" x="333" y="456"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PlayVideoIcon" width="91" height="91"/>
+    </resources>
+</document>

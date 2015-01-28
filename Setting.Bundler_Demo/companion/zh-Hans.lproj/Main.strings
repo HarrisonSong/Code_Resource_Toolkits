@@ -1,0 +1,125 @@
+
+/* Class = "IBUIButton"; normalTitle = "PRIVACY POLICY"; ObjectID = "0Hg-SD-ueV"; */
+"0Hg-SD-ueV.normalTitle" = "隐私政策";
+
+/* Class = "IBUITabBarItem"; title = "Seniors"; ObjectID = "2he-wM-eD7"; */
+"2he-wM-eD7.title" = "长辈";
+
+/* Class = "IBUITextField"; placeholder = "Mobile No."; ObjectID = "aY7-vZ-2Sc"; */
+"aY7-vZ-2Sc.placeholder" = "手机号码";
+
+/* Class = "IBUIBarButtonItem"; title = "Add"; ObjectID = "5gp-JV-3Zp"; */
+"5gp-JV-3Zp.title" = "添加";
+
+/* Class = "IBUIButton"; normalTitle = "Add Member Now"; ObjectID = "Bmc-zQ-tyL"; */
+"Bmc-zQ-tyL.normalTitle" = "添加长辈";
+
+/* Class = "IBUIButton"; normalTitle = "Login with Facebook"; ObjectID = "KmA-RM-0vT"; */
+"KmA-RM-0vT.normalTitle" = "通过Facebook登陆";
+
+/* Class = "IBUILabel"; text = "236 South Bridge Road, Tanjong Pagar Singapore"; ObjectID = "BoB-5L-0sX"; */
+"BoB-5L-0sX.text" = "236 South Bridge Road, Tanjong Pagar Singapore";
+
+/* Class = "IBUITabBarItem"; title = "Settings"; ObjectID = "EDm-9H-MFn"; */
+"EDm-9H-MFn.title" = "设置";
+
+/* Class = "IBUITableViewSection"; footerTitle = " "; ObjectID = "EkL-th-M9b"; */
+"EkL-th-M9b.footerTitle" = " ";
+
+/* Class = "IBUILabel"; text = "Last Check-in Time:"; ObjectID = "EmJ-yy-nhH"; */
+"EmJ-yy-nhH.text" = "最新在线时间:";
+
+/* Class = "IBUITextField"; placeholder = "Name"; ObjectID = "GRV-s1-IJa"; */
+"GRV-s1-IJa.placeholder" = "名字";
+
+/* Class = "IBUILabel"; text = "Last Known:"; ObjectID = "GQP-X2-zez"; */
+"GQP-X2-zez.text" = "最新位置:";
+
+/* Class = "IBUILabel"; text = "Privacy Policy"; ObjectID = "GxK-fH-svu"; */
+"GxK-fH-svu.text" = "隐私政策";
+
+/* Class = "IBUINavigationItem"; title = "Members"; ObjectID = "IIn-nI-3iy"; */
+"IIn-nI-3iy.title" = "长辈";
+
+/* Class = "IBUILabel"; text = "X 0 Water intake for Today"; ObjectID = "IhY-8j-kng"; */
+"IhY-8j-kng.text" = "X 0 Water intake for Today";
+
+/* Class = "IBUILabel"; text = "Terms of Service"; ObjectID = "KxO-6k-69e"; */
+"KxO-6k-69e.text" = "服务条款";
+
+/* Class = "IBUIButton"; normalTitle = "TERMS"; ObjectID = "Ngq-Ks-UIo"; */
+"Ngq-Ks-UIo.normalTitle" = "服务条款";
+
+/* Class = "IBUILabel"; text = "Name"; ObjectID = "Nho-5E-f09"; */
+"Nho-5E-f09.text" = "名字";
+
+/* Class = "IBUIButton"; normalTitle = "Cancel"; ObjectID = "wJw-Iz-yvr"; */
+"wJw-Iz-yvr.normalTitle" = "取消";
+
+/* Class = "IBUILabel"; text = "Silverline Companion"; ObjectID = "Pay-M5-2wD"; */
+"Pay-M5-2wD.text" = "银线伴侣";
+
+/* Class = "IBUILabel"; text = "Add User"; ObjectID = "gBz-nL-LHu"; */
+"gBz-nL-LHu.text" = "添加长辈";
+
+/* Class = "IBUILabel"; text = "Well-Being Stats"; ObjectID = "UtM-LA-gpa"; */
+"UtM-LA-gpa.text" = "健康状况";
+
+/* Class = "IBUILabel"; text = "By logging in, you accept our Terms of
+ Service and Privacy Policy"; ObjectID = "W8B-xw-noD"; */
+"W8B-xw-noD.text" = "通过登录，您已经同意我们的
+服务条款和隐私政策";
+
+/* Class = "IBUILabel"; text = "Fri Oct 24 2014, 11:45"; ObjectID = "Znf-sN-NfJ"; */
+"Znf-sN-NfJ.text" = "Fri Oct 24 2014, 11:45";
+
+/* Class = "IBUILabel"; text = "Logout"; ObjectID = "bHo-Wc-DeS"; */
+"bHo-Wc-DeS.text" = "退出";
+
+/* Class = "IBUINavigationItem"; title = "Conversations"; ObjectID = "bvK-vm-RBi"; */
+"bvK-vm-RBi.title" = "对话";
+
+/* Class = "IBUILabel"; text = "Welcome to"; ObjectID = "cer-dS-3jD"; */
+"cer-dS-3jD.text" = "欢迎来到";
+
+/* Class = "IBUISegmentedControl"; ewG-Y7-nuM.segmentTitles[0] = "Water"; ObjectID = "ewG-Y7-nuM"; */
+"ewG-Y7-nuM.segmentTitles[0]" = "饮水";
+
+/* Class = "IBUISegmentedControl"; ewG-Y7-nuM.segmentTitles[1] = "Exercise"; ObjectID = "ewG-Y7-nuM"; */
+"ewG-Y7-nuM.segmentTitles[1]" = "运动";
+
+/* Class = "IBUISegmentedControl"; ewG-Y7-nuM.segmentTitles[2] = "Mood"; ObjectID = "ewG-Y7-nuM"; */
+"ewG-Y7-nuM.segmentTitles[2]" = "心情";
+
+/* Class = "IBUILabel"; text = "Out Of Home"; ObjectID = "fEU-ZW-Njl"; */
+"fEU-ZW-Njl.text" = "不在家";
+
+/* Class = "IBUILabel"; text = "Exercise for Today"; ObjectID = "gRs-gM-pST"; */
+"gRs-gM-pST.text" = "今天运动状况";
+
+/* Class = "IBUITabBarItem"; title = "Conversations"; ObjectID = "jKg-dP-zHw"; */
+"jKg-dP-zHw.title" = "对话";
+
+/* Class = "IBUILabel"; text = "Mood for Today"; ObjectID = "kVP-U6-MV2"; */
+"kVP-U6-MV2.text" = "今天的心情";
+
+/* Class = "IBUINavigationItem"; title = "Settings"; ObjectID = "mAh-I6-Ad1"; */
+"mAh-I6-Ad1.title" = "设置";
+
+/* Class = "IBUITextField"; text = "+65"; ObjectID = "tFD-Jr-aXj"; */
+"tFD-Jr-aXj.text" = "+65";
+
+/* Class = "IBUILabel"; text = "Location"; ObjectID = "u4Y-J6-GwJ"; */
+"u4Y-J6-GwJ.text" = "位置";
+
+/* Class = "IBUILabel"; text = "02/09/2014, 17:30"; ObjectID = "wrK-v7-d2A"; */
+"wrK-v7-d2A.text" = "02/09/2014, 17:30";
+
+/* Class = "IBUITableViewSection"; footerTitle = " "; ObjectID = "zg0-fQ-7So"; */
+"zg0-fQ-7So.footerTitle" = " ";
+
+/* Class = "IBUITableViewSection"; headerTitle = " "; ObjectID = "zg0-fQ-7So"; */
+"zg0-fQ-7So.headerTitle" = " ";
+
+/* Class = "IBUILabel"; text = "About Silverline"; ObjectID = "zvA-V2-kq4"; */
+"zvA-V2-kq4.text" = "关于 Silverline";

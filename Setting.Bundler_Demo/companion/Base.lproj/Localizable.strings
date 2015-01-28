@@ -1,0 +1,87 @@
+/* 
+  Localizable.strings
+  companion
+
+  Created by qiyue song on 12/12/14.
+  Copyright (c) 2014 silverline. All rights reserved.
+*/
+
+"Terms of Service" = "Terms of Service";
+
+"Privacy Policy" = "Privacy Policy";
+
+"%@ has sent a pairing request to you." = "%@ has sent a pairing request to you.";
+
+"Silverline Companion" = "Silverline Companion";
+
+"Your request has been sent to the member." = "Your request has been sent to the member.";
+
+"Failed to save the input data. please try again." = "Failed to save the input data. please try again.";
+
+"Failed to check your pairing status. Please try again." = "Failed to check your pairing status. Please try again.";
+
+"You have already paired with this member!" = "You have already paired with this member!";
+
+"Failed to check member data. Please try again." = "Failed to check member data. Please try again.";
+
+"The specific member has not been verified yet." = "The specific member has not been verified yet.";
+
+"Upload successfully!" = "Upload successfully!";
+
+"Failed to upload the profile image. Please try again." = "Failed to upload the profile image. Please try again.";
+
+"Uploading Profile Image ..." = "Uploading Profile Image ...";
+
+"Failed to remove the member. Please try again." = "Failed to remove the member. Please try again.";
+
+"%@ requests to track your location." = "%@ requests to track your location.";
+
+"Failed to send the request. Please try again." = "Failed to send the request. Please try again.";
+
+"No more new alert." = "No more new alert.";
+
+"Confirm to logout?" = "Confirm to logout?";
+
+"Cancel" = "Cancel";
+
+"Log Out" = "Log Out";
+
+"You, %@" = "You, %@";
+
+"Message ..." = "Message ...";
+
+"Do you want to resend the message?" = "Do you want to resend the message?";
+
+"Have not retrieved any message." = "Have not retrieved any message.";
+
+"Select one photo resource" = "Select one photo resource";
+
+"Take Photo" = "Take Photo";
+
+"Choose from Library" = "Choose from Library";
+
+"Resend" = "Resend";
+
+"Send" = "Send";
+
+"Failed to upload the photo. Please try again by tapping the photo." = "Failed to upload the photo. Please try again by tapping the photo.";
+
+"Please wait to finish uploading the photo." = "Please wait to finish uploading the photo.";
+
+"Failed to send the message. Please try again." = "Failed to send the message. Please try again.";
+
+"Well Being" = "Well Being";
+
+"Unknown" = "Unknown";
+
+"Out of Home" = "Out of Home";
+
+"In Home" = "In Home";
+
+"X %@ Water intake for Today" = "X %@ Water intake for Today";
+
+"System Alerts" = "System Alerts";
+
+"Today" = "Today";
+
+"Photo Message" = "Photo Message";

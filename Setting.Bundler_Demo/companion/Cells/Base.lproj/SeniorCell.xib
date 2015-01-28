@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SeniorCell" rowHeight="161" id="KGk-i7-Jjw" customClass="SeniorCell">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UkG-FL-BOR" userLabel="Info Container">
+                        <rect key="frame" x="141" y="9" width="171" height="148"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Checkin Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0Jq-cZ-AF9">
+                                <rect key="frame" x="8" y="39" width="145" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mAo-fl-ZHJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jGS-HD-Bta">
+                                <rect key="frame" x="8" y="62" width="145" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bfb-Ow-8cj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5M-XS-fZ8" userLabel="LocationButton">
+                                <rect key="frame" x="8" y="92" width="70" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="iSl-QK-v5n"/>
+                                </constraints>
+                                <state key="normal" image="LocationIcon" backgroundImage="TrackLocationButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLX-g2-9MZ" userLabel="MessageButton">
+                                <rect key="frame" x="82" y="92" width="70" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="XGD-0c-0Tu"/>
+                                </constraints>
+                                <state key="normal" image="InboxIcon" backgroundImage="MessageButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Hw-WL-MqG">
+                                <rect key="frame" x="8" y="8" width="145" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jQH-BD-nm0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Z5M-XS-fZ8" firstAttribute="leading" secondItem="UkG-FL-BOR" secondAttribute="leading" constant="8" id="2RL-ZQ-pmk"/>
+                            <constraint firstItem="9Hw-WL-MqG" firstAttribute="leading" secondItem="UkG-FL-BOR" secondAttribute="leading" constant="8" id="5MD-8U-Znv"/>
+                            <constraint firstAttribute="trailing" secondItem="jGS-HD-Bta" secondAttribute="trailing" constant="18" id="HFq-BM-oWi"/>
+                            <constraint firstItem="0Jq-cZ-AF9" firstAttribute="leading" secondItem="UkG-FL-BOR" secondAttribute="leading" constant="8" id="HHb-5U-ZmU"/>
+                            <constraint firstAttribute="bottom" secondItem="Z5M-XS-fZ8" secondAttribute="bottom" constant="7" id="ItC-1B-DUQ"/>
+                            <constraint firstAttribute="bottom" secondItem="lLX-g2-9MZ" secondAttribute="bottom" constant="7" id="OIX-cr-J1f"/>
+                            <constraint firstItem="9Hw-WL-MqG" firstAttribute="top" secondItem="UkG-FL-BOR" secondAttribute="top" constant="8" id="Sik-Eg-IAa"/>
+                            <constraint firstAttribute="trailing" secondItem="9Hw-WL-MqG" secondAttribute="trailing" constant="18" id="YF9-E8-TIO"/>
+                            <constraint firstItem="lLX-g2-9MZ" firstAttribute="leading" secondItem="Z5M-XS-fZ8" secondAttribute="trailing" constant="4" id="b37-cY-B1K"/>
+                            <constraint firstItem="Z5M-XS-fZ8" firstAttribute="top" secondItem="jGS-HD-Bta" secondAttribute="bottom" constant="9" id="dWG-DK-yS8"/>
+                            <constraint firstItem="jGS-HD-Bta" firstAttribute="top" secondItem="0Jq-cZ-AF9" secondAttribute="bottom" constant="2" id="fHH-6d-rDB"/>
+                            <constraint firstItem="jGS-HD-Bta" firstAttribute="leading" secondItem="UkG-FL-BOR" secondAttribute="leading" constant="8" id="hLE-t5-wuZ"/>
+                            <constraint firstItem="0Jq-cZ-AF9" firstAttribute="top" secondItem="9Hw-WL-MqG" secondAttribute="bottom" constant="1" id="k8o-aU-iMW"/>
+                            <constraint firstItem="lLX-g2-9MZ" firstAttribute="top" secondItem="jGS-HD-Bta" secondAttribute="bottom" constant="9" id="shI-mJ-F8G"/>
+                            <constraint firstAttribute="trailing" secondItem="0Jq-cZ-AF9" secondAttribute="trailing" constant="18" id="u3d-8s-yGQ"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultAvatarImage" translatesAutoresizingMaskIntoConstraints="NO" id="L3w-Vt-bVe" userLabel="Avatar">
+                        <rect key="frame" x="8" y="15" width="130" height="134"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="3Q0-GA-0qv"/>
+                            <constraint firstAttribute="width" constant="130" id="Dm6-RJ-2xG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3Q0-GA-0qv"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="L3w-Vt-bVe" secondAttribute="bottom" constant="11" id="4ec-Ua-I4s"/>
+                    <constraint firstItem="UkG-FL-BOR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="5ab-NV-W3V"/>
+                    <constraint firstAttribute="bottom" secondItem="UkG-FL-BOR" secondAttribute="bottom" constant="3" id="Nko-iH-ymJ"/>
+                    <constraint firstItem="L3w-Vt-bVe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="aUr-JW-HRs"/>
+                    <constraint firstItem="UkG-FL-BOR" firstAttribute="leading" secondItem="L3w-Vt-bVe" secondAttribute="trailing" constant="3" id="hS5-pk-vdg"/>
+                    <constraint firstAttribute="trailing" secondItem="UkG-FL-BOR" secondAttribute="trailing" id="rm6-3q-LES"/>
+                    <constraint firstItem="L3w-Vt-bVe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="zjn-Y5-EIY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="InboxButton" destination="lLX-g2-9MZ" id="ExH-Pa-yW3"/>
+                <outlet property="TrackLocationButton" destination="Z5M-XS-fZ8" id="9UV-52-sYM"/>
+                <outlet property="lastCheckTimeLabel" destination="0Jq-cZ-AF9" id="odM-r2-eZL"/>
+                <outlet property="seniorCheckedInTime" destination="jGS-HD-Bta" id="TDd-f6-odG"/>
+                <outlet property="seniorName" destination="9Hw-WL-MqG" id="wKy-i2-1GG"/>
+                <outlet property="seniorPhoto" destination="L3w-Vt-bVe" id="ZYh-Fa-4c2"/>
+            </connections>
+            <point key="canvasLocation" x="251.5" y="207.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DefaultAvatarImage" width="140" height="157"/>
+        <image name="InboxIcon" width="36" height="32"/>
+        <image name="LocationIcon" width="23" height="31"/>
+        <image name="MessageButton" width="159" height="87"/>
+        <image name="TrackLocationButton" width="159" height="87"/>
+    </resources>
+</document>

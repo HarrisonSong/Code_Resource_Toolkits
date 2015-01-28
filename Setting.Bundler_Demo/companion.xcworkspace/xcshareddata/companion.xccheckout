@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3924D246-8CF6-428C-98A6-225B834539F2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>companion</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CD054DEC59E8030BF0775DDF3CAE5D4146668B21</key>
+		<string>https://github.com/HarrisonSong/CodeSnippet.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Setting.Bundler_Demo/companion.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CD054DEC59E8030BF0775DDF3CAE5D4146668B21</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/HarrisonSong/CodeSnippet.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CD054DEC59E8030BF0775DDF3CAE5D4146668B21</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CD054DEC59E8030BF0775DDF3CAE5D4146668B21</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CodeSnippet</string>
+		</dict>
+	</array>
+</dict>
+</plist>

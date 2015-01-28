@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyMessageCell" rowHeight="160" id="KGk-i7-Jjw" customClass="MyMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17/03/2014" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGP-73-Xsl">
+                        <rect key="frame" x="8" y="8" width="304" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="ubg-BE-kQe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLf-h8-iH4" userLabel="Message Container">
+                        <rect key="frame" x="36" y="30" width="276" height="116"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qQ-6l-K7z">
+                                <rect key="frame" x="8" y="8" width="260" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="266" id="Q7G-ot-ysk"/>
+                                    <constraint firstAttribute="height" priority="750" constant="21" id="g01-ST-ned"/>
+                                </constraints>
+                                <string key="text">Have a great weekend! Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec. Proin quis tortor orci. Have a great weekend! </string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9qQ-6l-K7z" secondAttribute="trailing" constant="8" id="CrN-re-9QO"/>
+                            <constraint firstItem="9qQ-6l-K7z" firstAttribute="top" secondItem="kLf-h8-iH4" secondAttribute="top" constant="8" id="NhT-Lx-mCy"/>
+                            <constraint firstAttribute="bottom" secondItem="9qQ-6l-K7z" secondAttribute="bottom" constant="8" id="adS-yd-yj7"/>
+                            <constraint firstItem="9qQ-6l-K7z" firstAttribute="leading" secondItem="kLf-h8-iH4" secondAttribute="leading" constant="8" id="gUs-L0-RK9"/>
+                        </constraints>
+                    </view>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="yf1-zh-oJa">
+                        <rect key="frame" x="8" y="78" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRS-j9-HB3">
+                        <rect key="frame" x="8" y="78" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="mfq-wJ-AJh"/>
+                            <constraint firstAttribute="width" constant="20" id="tsb-cR-xNW"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="InfoIcon">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kLf-h8-iH4" firstAttribute="leading" secondItem="bRS-j9-HB3" secondAttribute="trailing" constant="8" id="0d5-QR-9RN"/>
+                    <constraint firstAttribute="trailing" secondItem="kLf-h8-iH4" secondAttribute="trailing" constant="8" id="3mR-FF-SkM"/>
+                    <constraint firstItem="BGP-73-Xsl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="54c-mh-JyP"/>
+                    <constraint firstItem="BGP-73-Xsl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6KX-rt-1tq"/>
+                    <constraint firstAttribute="trailing" secondItem="BGP-73-Xsl" secondAttribute="trailing" constant="8" id="Joc-MX-KIf"/>
+                    <constraint firstItem="9qQ-6l-K7z" firstAttribute="centerY" secondItem="yf1-zh-oJa" secondAttribute="centerY" id="Nvw-dz-4E7"/>
+                    <constraint firstItem="kLf-h8-iH4" firstAttribute="top" secondItem="BGP-73-Xsl" secondAttribute="bottom" id="Rvp-gz-8pL"/>
+                    <constraint firstItem="kLf-h8-iH4" firstAttribute="leading" secondItem="yf1-zh-oJa" secondAttribute="trailing" constant="8" id="jV2-Lq-f6y"/>
+                    <constraint firstItem="9qQ-6l-K7z" firstAttribute="centerY" secondItem="bRS-j9-HB3" secondAttribute="centerY" id="tNL-NO-5Ui"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="FailedButton" destination="bRS-j9-HB3" id="2nW-sh-vPx"/>
+                <outlet property="LoadingView" destination="yf1-zh-oJa" id="qlZ-Uh-l9l"/>
+                <outlet property="MessageContainer" destination="kLf-h8-iH4" id="2ne-HD-cJ8"/>
+                <outlet property="MessageContent" destination="9qQ-6l-K7z" id="jx6-cY-32r"/>
+                <outlet property="MessageDate" destination="BGP-73-Xsl" id="GLy-w2-Lce"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="532"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="InfoIcon" width="50" height="50"/>
+    </resources>
+</document>

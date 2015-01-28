@@ -1,0 +1,124 @@
+
+/* Class = "IBUIButton"; normalTitle = "PRIVACY POLICY"; ObjectID = "0Hg-SD-ueV"; */
+"0Hg-SD-ueV.normalTitle" = "POLISI PRIVASI";
+
+/* Class = "IBUITabBarItem"; title = "Members"; ObjectID = "2he-wM-eD7"; */
+"2he-wM-eD7.title" = "Ahli-ahli";
+
+/* Class = "IBUITextField"; placeholder = "Mobile No."; ObjectID = "aY7-vZ-2Sc"; */
+"aY7-vZ-2Sc.placeholder" = "No. telephone mudah alih";
+
+/* Class = "IBUIBarButtonItem"; title = "Add"; ObjectID = "5gp-JV-3Zp"; */
+"5gp-JV-3Zp.title" = "Tambah";
+
+/* Class = "IBUIButton"; normalTitle = "Add Member Now"; ObjectID = "Bmc-zQ-tyL"; */
+"Bmc-zQ-tyL.normalTitle" = "Tambah Ahli sekarang";
+
+/* Class = "IBUIButton"; normalTitle = "Login with Facebook"; ObjectID = "KmA-RM-0vT"; */
+"KmA-RM-0vT.normalTitle" = "Daftar masuk dengan Facebook";
+
+/* Class = "IBUILabel"; text = "236 South Bridge Road, Tanjong Pagar Singapore"; ObjectID = "BoB-5L-0sX"; */
+"BoB-5L-0sX.text" = "236 South Bridge Road, Tanjong Pagar Singapore";
+
+/* Class = "IBUITabBarItem"; title = "Settings"; ObjectID = "EDm-9H-MFn"; */
+"EDm-9H-MFn.title" = "Seting";
+
+/* Class = "IBUITableViewSection"; footerTitle = " "; ObjectID = "EkL-th-M9b"; */
+"EkL-th-M9b.footerTitle" = " ";
+
+/* Class = "IBUILabel"; text = "Last Check-in Time:"; ObjectID = "EmJ-yy-nhH"; */
+"EmJ-yy-nhH.text" = "Masa daftar masuk terakhir:";
+
+/* Class = "IBUITextField"; placeholder = "Name"; ObjectID = "GRV-s1-IJa"; */
+"GRV-s1-IJa.placeholder" = "Nama";
+
+/* Class = "IBUILabel"; text = "Last Known:"; ObjectID = "GQP-X2-zez"; */
+"GQP-X2-zez.text" = "Diketahui terakhir:";
+
+/* Class = "IBUILabel"; text = "Privacy Policy"; ObjectID = "GxK-fH-svu"; */
+"GxK-fH-svu.text" = "Polisi Privasi";
+
+/* Class = "IBUINavigationItem"; title = "Members"; ObjectID = "IIn-nI-3iy"; */
+"IIn-nI-3iy.title" = "Ahli-ahli";
+
+/* Class = "IBUILabel"; text = "X 0 Water intake for Today"; ObjectID = "IhY-8j-kng"; */
+"IhY-8j-kng.text" = "X 0 Pengambilan air hari ini";
+
+/* Class = "IBUILabel"; text = "Terms of Service"; ObjectID = "KxO-6k-69e"; */
+"KxO-6k-69e.text" = "Syarat-syarat Servis";
+
+/* Class = "IBUIButton"; normalTitle = "TERMS"; ObjectID = "Ngq-Ks-UIo"; */
+"Ngq-Ks-UIo.normalTitle" = "SYARAT-SYARAT";
+
+/* Class = "IBUILabel"; text = "Name"; ObjectID = "Nho-5E-f09"; */
+"Nho-5E-f09.text" = "Nama";
+
+/* Class = "IBUIButton"; normalTitle = "Cancel"; ObjectID = "wJw-Iz-yvr"; */
+"wJw-Iz-yvr.normalTitle" = "Batal";
+
+/* Class = "IBUILabel"; text = "Silverline Companion"; ObjectID = "Pay-M5-2wD"; */
+"Pay-M5-2wD.text" = "Silverline Companion";
+
+/* Class = "IBUILabel"; text = "Add Member"; ObjectID = "gBz-nL-LHu"; */
+"gBz-nL-LHu.text" = "Tambah Ahli";
+
+/* Class = "IBUILabel"; text = "Well-Being Stats"; ObjectID = "UtM-LA-gpa"; */
+"UtM-LA-gpa.text" = "Statistik Kesihatan";
+
+/* Class = "IBUILabel"; text = "By logging in, you accept our Terms of  Service and Privacy Policy"; ObjectID = "W8B-xw-noD"; */
+"W8B-xw-noD.text" = "Dengan daftar masuk anda bersetuju dengan 
+Syarat-syarat Servis dan Polisi Privasi kami";
+
+/* Class = "IBUILabel"; text = "Fri Oct 24 2014, 11:45"; ObjectID = "Znf-sN-NfJ"; */
+"Znf-sN-NfJ.text" = "Fri Oct 24 2014, 11:45";
+
+/* Class = "IBUILabel"; text = "Logout"; ObjectID = "bHo-Wc-DeS"; */
+"bHo-Wc-DeS.text" = "daftar keluar";
+
+/* Class = "IBUINavigationItem"; title = "Conversations"; ObjectID = "bvK-vm-RBi"; */
+"bvK-vm-RBi.title" = "Perbualan";
+
+/* Class = "IBUILabel"; text = "Welcome to"; ObjectID = "cer-dS-3jD"; */
+"cer-dS-3jD.text" = "Selamat Datang ke";
+
+/* Class = "IBUISegmentedControl"; ewG-Y7-nuM.segmentTitles[0] = "Water"; ObjectID = "ewG-Y7-nuM"; */
+"ewG-Y7-nuM.segmentTitles[0]" = "Air";
+
+/* Class = "IBUISegmentedControl"; ewG-Y7-nuM.segmentTitles[1] = "Exercise"; ObjectID = "ewG-Y7-nuM"; */
+"ewG-Y7-nuM.segmentTitles[1]" = "Senaman";
+
+/* Class = "IBUISegmentedControl"; ewG-Y7-nuM.segmentTitles[2] = "Mood"; ObjectID = "ewG-Y7-nuM"; */
+"ewG-Y7-nuM.segmentTitles[2]" = "Mood";
+
+/* Class = "IBUILabel"; text = "Out Of Home"; ObjectID = "fEU-ZW-Njl"; */
+"fEU-ZW-Njl.text" = "Tidak berada di rumah";
+
+/* Class = "IBUILabel"; text = "Exercise for Today"; ObjectID = "gRs-gM-pST"; */
+"gRs-gM-pST.text" = "Senaman untuk hari ini";
+
+/* Class = "IBUITabBarItem"; title = "Conversations"; ObjectID = "jKg-dP-zHw"; */
+"jKg-dP-zHw.title" = "Perbualan";
+
+/* Class = "IBUILabel"; text = "Mood for Today"; ObjectID = "kVP-U6-MV2"; */
+"kVP-U6-MV2.text" = "Mood hari ini";
+
+/* Class = "IBUINavigationItem"; title = "Settings"; ObjectID = "mAh-I6-Ad1"; */
+"mAh-I6-Ad1.title" = "Seting";
+
+/* Class = "IBUITextField"; text = "+65"; ObjectID = "tFD-Jr-aXj"; */
+"tFD-Jr-aXj.text" = "+65";
+
+/* Class = "IBUILabel"; text = "Location"; ObjectID = "u4Y-J6-GwJ"; */
+"u4Y-J6-GwJ.text" = "Lokasi";
+
+/* Class = "IBUILabel"; text = "02/09/2014, 17:30"; ObjectID = "wrK-v7-d2A"; */
+"wrK-v7-d2A.text" = "02/09/2014, 17:30";
+
+/* Class = "IBUITableViewSection"; footerTitle = " "; ObjectID = "zg0-fQ-7So"; */
+"zg0-fQ-7So.footerTitle" = " ";
+
+/* Class = "IBUITableViewSection"; headerTitle = " "; ObjectID = "zg0-fQ-7So"; */
+"zg0-fQ-7So.headerTitle" = " ";
+
+/* Class = "IBUILabel"; text = "About Silverline"; ObjectID = "zvA-V2-kq4"; */
+"zvA-V2-kq4.text" = "Mengenai Sliverline";

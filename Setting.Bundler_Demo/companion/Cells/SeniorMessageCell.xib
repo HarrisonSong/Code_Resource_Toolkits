@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SeniorMessageCell" rowHeight="178" id="KGk-i7-Jjw" customClass="SeniorMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03/04/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vh-n3-FfR">
+                        <rect key="frame" x="8" y="8" width="304" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="6wf-UG-cOO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l11-A8-BB0" userLabel="Message Container">
+                        <rect key="frame" x="8" y="30" width="278" height="116"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZy-MW-fGm">
+                                <rect key="frame" x="8" y="8" width="260" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="266" id="4Pi-x4-uc1"/>
+                                    <constraint firstAttribute="height" priority="750" constant="100" id="xPb-Co-kLE"/>
+                                </constraints>
+                                <string key="text">Have a great weekend! Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec. Proin quis tortor orci. Have a great weekend! </string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lZy-MW-fGm" secondAttribute="bottom" constant="8" id="4Ww-0n-QJO"/>
+                            <constraint firstItem="lZy-MW-fGm" firstAttribute="top" secondItem="l11-A8-BB0" secondAttribute="top" constant="8" id="Igy-bC-mkO"/>
+                            <constraint firstItem="lZy-MW-fGm" firstAttribute="leading" secondItem="l11-A8-BB0" secondAttribute="leading" constant="8" id="SqY-Gc-1Aw"/>
+                            <constraint firstAttribute="trailing" secondItem="lZy-MW-fGm" secondAttribute="trailing" constant="10" id="xxa-Hg-Xxy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="l11-A8-BB0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="4k9-MW-R2a"/>
+                    <constraint firstItem="7Vh-n3-FfR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="67C-SA-6et"/>
+                    <constraint firstItem="l11-A8-BB0" firstAttribute="top" secondItem="7Vh-n3-FfR" secondAttribute="bottom" id="FBl-vg-fb9"/>
+                    <constraint firstItem="7Vh-n3-FfR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="TtE-rU-7ws"/>
+                    <constraint firstAttribute="trailing" secondItem="7Vh-n3-FfR" secondAttribute="trailing" constant="8" id="YYU-jj-Yb3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="MessageContainer" destination="l11-A8-BB0" id="s3Y-yc-6N1"/>
+                <outlet property="MessageContent" destination="lZy-MW-fGm" id="MD3-GQ-I7v"/>
+                <outlet property="MessageDate" destination="7Vh-n3-FfR" id="EXS-IG-63S"/>
+            </connections>
+            <point key="canvasLocation" x="293" y="362"/>
+        </tableViewCell>
+    </objects>
+</document>

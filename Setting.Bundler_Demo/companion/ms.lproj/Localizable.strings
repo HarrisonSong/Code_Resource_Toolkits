@@ -1,0 +1,87 @@
+/* 
+  Localizable.strings
+  companion
+
+  Created by qiyue song on 12/12/14.
+  Copyright (c) 2014 silverline. All rights reserved.
+*/
+
+"Terms of Service" = "Syarat-syarat Servis";
+
+"Privacy Policy" = "Polisi Privasi";
+
+"%@ has sent a pairing request to you." = "%@ telah hantar permintaan untuk berpasangan dengan anda.";
+
+"Silverline Companion" = "Silverline Companion";
+
+"Your request has been sent to the member." = "Permintaan anda telah dihantarkan kepada ahli itu.";
+
+"Failed to save the input data. please try again." = "Gagal untuk menyimpan maklumat masuk. Sila cuba lagi.";
+
+"Failed to check your pairing status. Please try again." = "Pemeriksaan taraf berpasangan anda gagal. Sila cuba lagi.";
+
+"You have already paired with this member!" = "Anda telah berpasangan dengan ahli ini.";
+
+"Failed to check member data. Please try again." = "Pemeriksaan maklumat ahli gagal. Sila cuba lagi.";
+
+"The specific member has not been verified yet." = "Ahli tersebut belum lagi disahkan.";
+
+"Upload successfully!" = "menaik muat berjaya!";
+
+"Failed to upload the profile image. Please try again." = "Gagal untuk menaik muat imej profil. Sila try lagi.";
+
+"Uploading Profile Image ..." = "Sedang menaik muat imej profil ...";
+
+"Failed to remove the member. Please try again." = "Gagal untuk mengeluarkan ahli. Sila cuba lagi.";
+
+"%@ requests to track your location." = "%@ minta untuk menjejak lokasi anda.";
+
+"Failed to send the request. Please try again." = "Gagal untuk hantarkan permintaan. Sila cuba lagi.";
+
+"No more new alert." = "Tiada amaran baru.";
+
+"Confirm to logout?" = "Pasti untuk daftar keluar?";
+
+"Cancel" = "Batal";
+
+"Log Out" = "daftar keluar";
+
+"You, %@" = "Anda, %@";
+
+"Message ..." = "Mesej ...";
+
+"Do you want to resend the message?" = "Adakah anda hendak kirim mesej itu sekali lagi?";
+
+"Have not retrieved any message." = "Belum mengeluarkan mesej.";
+
+"Select one photo resource" = "Sila pilih satu sumber foto";
+
+"Take Photo" = "Ambil gambar";
+
+"Choose from Library" = "Pilih dari perpustakaan";
+
+"Resend" = "Hantar lagi";
+
+"Send" = "hantar";
+
+"Failed to upload the photo. Please try again by tapping the photo." = "Gagal untuk menaik muat foto. Sila cuba lagi dengan menekan foto itu.";
+
+"Please wait to finish uploading the photo." = "Sila tunggu untuk menyelesaikan naik masuk foto.";
+
+"Failed to send the message. Please try again." = "Gagal untuk hantarkan mesej. Sila cuba lagi.";
+
+"Well Being" = "Kesihatan";
+
+"Unknown" = "Tidak diketahui";
+
+"Out of Home" = "Tidak berada di rumah";
+
+"In Home" = "Dalam halaman utama";
+
+"X %@ Water intake for Today" = "X %@ Pengambilan air hari ini";
+
+"System Alerts" = "Amaran sistem";
+
+"Today" = "Ini hari";
+
+"Photo Message" = "Mesej foto";

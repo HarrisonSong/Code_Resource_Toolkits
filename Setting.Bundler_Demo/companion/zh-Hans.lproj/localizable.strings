@@ -1,0 +1,87 @@
+/* 
+  Localizable.strings
+  companion
+
+  Created by qiyue song on 12/12/14.
+  Copyright (c) 2014 silverline. All rights reserved.
+*/
+
+"Terms of Service" = "服务条款";
+
+"Privacy Policy" = "隐私政策";
+
+"%@ has sent a pairing request to you." = "%@ 向你发送了一个配对请求";
+
+"Silverline Companion" = "银线伴侣";
+
+"Your request has been sent to the member." = "已向你的长辈发送请求";
+
+"Failed to save the input data. please try again." = "存储输入数据失败. 请重新尝试.";
+
+"Failed to check your pairing status. Please try again." = "检查配对状态失败. 请重新尝试.";
+
+"You have already paired with this member!" = "你已经和这位长辈配对.";
+
+"Failed to check member data. Please try again." = "检查长辈信息失败. 请重新尝试.";
+
+"The specific member has not been verified yet." = "这位长辈还未验证.";
+
+"Upload successfully!" = "上传成功！";
+
+"Failed to upload the profile image. Please try again." = "上传头像图片失败. 请重新尝试.";
+
+"Uploading Profile Image ..." = "上传头像 ...";
+
+"Failed to remove the member. Please try again." = "接触长辈配对失败. 请重新尝试.";
+
+"%@ requests to track your location." = "%@ 请求获取您的位置信息.";
+
+"Failed to send the request. Please try again." = "发送请求失败. 请重新尝试.";
+
+"No more new alert." = "没有新的系统提醒.";
+
+"Confirm to logout?" = "您确定退出?";
+
+"Cancel" = "取消";
+
+"Log Out" = "退出";
+
+"You, %@" = "你, %@";
+
+"Message ..." = "消息 ...";
+
+"Do you want to resend the message?" = "您是否想要重新发送消息?";
+
+"Have not retrieved any message." = "没有获取任何消息.";
+
+"Select one photo resource" = "请选择一种图片来源：";
+
+"Take Photo" = "拍摄照片";
+
+"Choose from Library" = "从照片库获取";
+
+"Resend" = "重新发送";
+
+"Send" = "发送";
+
+"Failed to upload the photo. Please try again by tapping the photo." = "上传图片失败. 请点击图片重试.";
+
+"Please wait to finish uploading the photo." = "请等待图片上传完成.";
+
+"Failed to send the message. Please try again." = "发送消息失败. 请重新尝试.";
+
+"Well Being" = "健康状况";
+
+"Unknown" = "未知";
+
+"Out of Home" = "不在家";
+
+"In Home" = "在家";
+
+"X %@ Water intake for Today" = "X %@ 今天饮水量";
+
+"System Alerts" = "系统提醒";
+
+"Today" = "今天";
+
+"Photo Message" = "照片消息";

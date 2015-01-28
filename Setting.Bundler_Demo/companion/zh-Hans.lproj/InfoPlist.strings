@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  companion
+
+  Created by qiyue song on 13/12/14.
+  Copyright (c) 2014 silverline. All rights reserved.
+*/
+
+CFBundleDisplayName = "银线伴侣";

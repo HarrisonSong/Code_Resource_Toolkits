@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="97" id="KGk-i7-Jjw" customClass="MessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MessageImage" translatesAutoresizingMaskIntoConstraints="NO" id="dlc-W1-rUb">
+                        <rect key="frame" x="8" y="12" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="DEW-oN-Aeb"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ng7-Md-Fuf" userLabel="Info Container">
+                        <rect key="frame" x="86" y="17" width="231" height="71"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9o-CI-CCA">
+                                <rect key="frame" x="0.0" y="44" width="236" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, How are you this morning, son?" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRQ-sK-I2X">
+                                <rect key="frame" x="0.0" y="24" width="236" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="igd-6h-S3t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jack Ng" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pir-hV-Vvp">
+                                <rect key="frame" x="0.0" y="0.0" width="216" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="QqY-E8-dqI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Pir-hV-Vvp" firstAttribute="top" secondItem="Ng7-Md-Fuf" secondAttribute="top" id="08L-mv-icM"/>
+                            <constraint firstAttribute="trailing" secondItem="j9o-CI-CCA" secondAttribute="trailing" constant="-5" id="1pq-uf-yqG"/>
+                            <constraint firstItem="j9o-CI-CCA" firstAttribute="top" secondItem="LRQ-sK-I2X" secondAttribute="bottom" id="2Jx-hj-Ozr"/>
+                            <constraint firstAttribute="trailing" secondItem="LRQ-sK-I2X" secondAttribute="trailing" constant="-5" id="65u-SB-Njt"/>
+                            <constraint firstItem="j9o-CI-CCA" firstAttribute="leading" secondItem="Ng7-Md-Fuf" secondAttribute="leading" id="CQ8-F1-gfg"/>
+                            <constraint firstItem="Pir-hV-Vvp" firstAttribute="leading" secondItem="Ng7-Md-Fuf" secondAttribute="leading" id="E4X-T2-JFD"/>
+                            <constraint firstItem="LRQ-sK-I2X" firstAttribute="leading" secondItem="Ng7-Md-Fuf" secondAttribute="leading" id="Lhh-gS-FW1"/>
+                            <constraint firstItem="LRQ-sK-I2X" firstAttribute="top" secondItem="Pir-hV-Vvp" secondAttribute="bottom" id="gTv-qO-S2p"/>
+                            <constraint firstAttribute="bottom" secondItem="j9o-CI-CCA" secondAttribute="bottom" id="nNX-x6-AUp"/>
+                            <constraint firstAttribute="trailing" secondItem="Pir-hV-Vvp" secondAttribute="trailing" constant="15" id="pXf-iF-ge3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dlc-W1-rUb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0jD-iL-Ddy"/>
+                    <constraint firstAttribute="bottom" secondItem="dlc-W1-rUb" secondAttribute="bottom" constant="14" id="AzA-ay-zoz"/>
+                    <constraint firstItem="Ng7-Md-Fuf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="C0O-Mz-Jep"/>
+                    <constraint firstAttribute="bottom" secondItem="Ng7-Md-Fuf" secondAttribute="bottom" constant="8" id="TGz-7R-MZB"/>
+                    <constraint firstItem="Ng7-Md-Fuf" firstAttribute="leading" secondItem="dlc-W1-rUb" secondAttribute="trailing" constant="8" id="TfC-0x-kxY"/>
+                    <constraint firstItem="dlc-W1-rUb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="geB-0c-gw0"/>
+                    <constraint firstAttribute="trailing" secondItem="Ng7-Md-Fuf" secondAttribute="trailing" id="viw-V4-NtR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="messageContent" destination="LRQ-sK-I2X" id="lcm-Mk-KeU"/>
+                <outlet property="messageDate" destination="j9o-CI-CCA" id="m0s-Kc-w1j"/>
+                <outlet property="messagePhoto" destination="dlc-W1-rUb" id="K4d-r6-WYg"/>
+                <outlet property="messageUsername" destination="Pir-hV-Vvp" id="HIT-d6-Jzm"/>
+            </connections>
+            <point key="canvasLocation" x="304" y="405"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="MessageImage" width="100" height="100"/>
+    </resources>
+</document>
