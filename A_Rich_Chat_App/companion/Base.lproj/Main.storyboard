@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BQk-pB-u6w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BQk-pB-u6w">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -794,7 +794,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
-                            <tableViewSection footerTitle=" " id="EkL-th-M9b">
+                            <tableViewSection headerTitle=" " id="EkL-th-M9b">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="zvA-V2-kq4" style="IBUITableViewCellStyleDefault" id="hx7-XL-oY1">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -840,17 +840,47 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle=" " footerTitle=" " id="zg0-fQ-7So">
+                            <tableViewSection headerTitle=" " id="zg0-fQ-7So">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XPk-rc-Yfk">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="XPk-rc-Yfk">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XPk-rc-Yfk" id="SFk-4s-1ec">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHo-Wc-DeS">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="System Alert" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUZ-Nf-EeL">
+                                                    <rect key="frame" x="15" y="0.0" width="233" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oGV-jK-20Q">
+                                                    <rect key="frame" x="256" y="6" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eUZ-Nf-EeL" firstAttribute="top" secondItem="SFk-4s-1ec" secondAttribute="top" id="4An-Qs-xzz"/>
+                                                <constraint firstAttribute="bottom" secondItem="oGV-jK-20Q" secondAttribute="bottom" constant="6" id="A8F-Ms-HwK"/>
+                                                <constraint firstItem="oGV-jK-20Q" firstAttribute="top" secondItem="SFk-4s-1ec" secondAttribute="top" constant="6" id="B7P-AC-0pr"/>
+                                                <constraint firstAttribute="bottom" secondItem="eUZ-Nf-EeL" secondAttribute="bottom" id="EDV-w4-NXR"/>
+                                                <constraint firstAttribute="trailing" secondItem="oGV-jK-20Q" secondAttribute="trailing" constant="15" id="arw-Ua-rEB"/>
+                                                <constraint firstItem="eUZ-Nf-EeL" firstAttribute="leading" secondItem="SFk-4s-1ec" secondAttribute="leading" constant="15" id="c8u-pY-mGb"/>
+                                                <constraint firstItem="oGV-jK-20Q" firstAttribute="leading" secondItem="eUZ-Nf-EeL" secondAttribute="trailing" constant="8" id="sH5-qd-ZGA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle=" " footerTitle=" " id="Y2E-ay-0UZ">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cy7-g8-Lhf">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cy7-g8-Lhf" id="knf-hg-Vng">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOK-03-JZu">
                                                     <rect key="frame" x="8" y="11" width="304" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="304" id="MsZ-xp-TJC"/>
+                                                        <constraint firstAttribute="width" constant="304" id="F5y-kA-zcb"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -858,8 +888,8 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="bHo-Wc-DeS" firstAttribute="centerY" secondItem="SFk-4s-1ec" secondAttribute="centerY" id="SCo-Xi-zFb"/>
-                                                <constraint firstItem="bHo-Wc-DeS" firstAttribute="centerX" secondItem="SFk-4s-1ec" secondAttribute="centerX" id="xUs-ol-U8P"/>
+                                                <constraint firstItem="bOK-03-JZu" firstAttribute="centerY" secondItem="knf-hg-Vng" secondAttribute="centerY" id="GDQ-pI-Bzr"/>
+                                                <constraint firstItem="bOK-03-JZu" firstAttribute="centerX" secondItem="knf-hg-Vng" secondAttribute="centerX" id="mlo-Dl-aUz"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -874,8 +904,10 @@
                     <navigationItem key="navigationItem" title="Settings" id="mAh-I6-Ad1"/>
                     <connections>
                         <outlet property="AboutSilverlineLabel" destination="zvA-V2-kq4" id="MOm-UV-CW9"/>
-                        <outlet property="LogoutLabel" destination="bHo-Wc-DeS" id="lK4-Jz-CuP"/>
+                        <outlet property="LogoutLabel" destination="bOK-03-JZu" id="Qa8-Nq-u0h"/>
                         <outlet property="PrivacyPolicyLabel" destination="GxK-fH-svu" id="h6F-NC-3ER"/>
+                        <outlet property="SystemAlertLabel" destination="eUZ-Nf-EeL" id="tjJ-bZ-ePc"/>
+                        <outlet property="SystemAlertSwitch" destination="oGV-jK-20Q" id="6BO-V0-Oen"/>
                         <outlet property="TermsOfServiceLabel" destination="KxO-6k-69e" id="2M2-My-eYe"/>
                     </connections>
                 </tableViewController>

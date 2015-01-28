@@ -8,6 +8,7 @@
 
 #import "MessagesViewController.h"
 #import "InboxViewController.h"
+#import "AlertsViewController.h"
 #import "MessageCell.h"
 #import "Senior.h"
 #import "Message.h"
@@ -72,15 +73,16 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated{
-    NSUserDefaults * userDefault = [NSUserDefaults standardUserDefaults];
-    if([userDefault objectForKey:@"com.silverline.companion.iscachedirty"]){
+    if([shareItemManager sharedInstance].isSeniorDeleted ){
+        [shareItemManager sharedInstance].isSeniorDeleted = NO;
         [self.conversationsList removeAllObjects];
         [self.tableView reloadData];
-        [userDefault removeObjectForKey:@"com.silverline.companion.iscachedirty"];
         [self.refreshControl beginRefreshing];
         [self reloadConversationsList];
-    }else if([userDefault objectForKey:@"com.silverline.companion.addseniorreload"]){
-        [userDefault removeObjectForKey:@"com.silverline.companion.addseniorreload"];
+    }
+    if([shareItemManager sharedInstance].isSeniorAdded || [shareItemManager sharedInstance].needUpdateMessagePage){
+        [shareItemManager sharedInstance].isSeniorAdded = NO;
+        [shareItemManager sharedInstance].needUpdateMessagePage = NO;
         [self.refreshControl beginRefreshing];
         [self reloadConversationsList];
     }
@@ -188,7 +190,7 @@
             [((MessageCell *)[tableView cellForRowAtIndexPath:indexPath]).messagePhoto.subviews[0] removeFromSuperview];
         }
         UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        InboxViewController * AlertVC = [storyboard instantiateViewControllerWithIdentifier:@"Alerts"];
+        AlertsViewController * AlertVC = [storyboard instantiateViewControllerWithIdentifier:@"Alerts"];
         AlertVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:AlertVC animated:YES];
     }
@@ -259,50 +261,52 @@
             [self.conversationsList addObject:newConversation];
         }
     }
-
-    // Add System alert Conversation
-    Conversation * newConversation = [[Conversation alloc] init];
-    newConversation.seniorId = [PFUser currentUser].objectId;
-    PMKPromise * countPromise = [PMKPromise new:^(PMKPromiseFulfiller fulfill, PMKPromiseRejecter reject) {
-        PFQuery * messageQuery = [AlertInbox query];
-        [messageQuery whereKey:@"userId" equalTo:[PFUser currentUser]];
-        [messageQuery whereKey:@"type" equalTo:@"sys"];
-        [messageQuery whereKey:@"isRead" equalTo:@NO];
-        [messageQuery countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
-            if(!error){
-                newConversation.badgeNumber = number;
-                if(number == 0){
-                    newConversation.hasUnreadMessage = NO;
+    
+    if([shareItemManager sharedInstance].isSystemAlertOn){
+        // Add System alert Conversation
+        Conversation * newConversation = [[Conversation alloc] init];
+        newConversation.seniorId = [PFUser currentUser].objectId;
+        PMKPromise * countPromise = [PMKPromise new:^(PMKPromiseFulfiller fulfill, PMKPromiseRejecter reject) {
+            PFQuery * messageQuery = [AlertInbox query];
+            [messageQuery whereKey:@"userId" equalTo:[PFUser currentUser]];
+            [messageQuery whereKey:@"type" equalTo:@"sys"];
+            [messageQuery whereKey:@"isRead" equalTo:@NO];
+            [messageQuery countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
+                if(!error){
+                    newConversation.badgeNumber = number;
+                    if(number == 0){
+                        newConversation.hasUnreadMessage = NO;
+                    }else{
+                        newConversation.hasUnreadMessage = YES;
+                    }
+                    fulfill(@"successfully");
                 }else{
-                    newConversation.hasUnreadMessage = YES;
+                    newConversation.badgeNumber = 0;
+                    newConversation.hasUnreadMessage = NO;
+                    reject(error);
                 }
-                fulfill(@"successfully");
-            }else{
-                newConversation.badgeNumber = 0;
-                newConversation.hasUnreadMessage = NO;
-                reject(error);
-            }
+            }];
         }];
-    }];
-    PMKPromise * lastAlertPromise = [PMKPromise new:^(PMKPromiseFulfiller fulfill, PMKPromiseRejecter reject) {
-        PFQuery * alertQuery = [AlertInbox query];
-        [alertQuery whereKey:@"userId" equalTo:[PFUser currentUser]];
-        [alertQuery whereKey:@"type" equalTo:@"sys"];
-        [alertQuery getFirstObjectInBackgroundWithBlock:^(PFObject * object, NSError *error) {
-            if(!error){
-                newConversation.lastContent = ((AlertInbox *)object).messageData;
-                newConversation.lastDate = object.createdAt;
-                fulfill(@"successfully");
-            }else{
-                newConversation.lastContent = NSLocalizedString(@"No more new alert.", @"no more new message");
-                newConversation.lastDate = [NSDate new];
-                reject(error);
-            }
+        PMKPromise * lastAlertPromise = [PMKPromise new:^(PMKPromiseFulfiller fulfill, PMKPromiseRejecter reject) {
+            PFQuery * alertQuery = [AlertInbox query];
+            [alertQuery whereKey:@"userId" equalTo:[PFUser currentUser]];
+            [alertQuery whereKey:@"type" equalTo:@"sys"];
+            [alertQuery getFirstObjectInBackgroundWithBlock:^(PFObject * object, NSError *error) {
+                if(!error){
+                    newConversation.lastContent = ((AlertInbox *)object).messageData;
+                    newConversation.lastDate = object.createdAt;
+                    fulfill(@"successfully");
+                }else{
+                    newConversation.lastContent = NSLocalizedString(@"No more new alert.", @"no more new message");
+                    newConversation.lastDate = [NSDate new];
+                    reject(error);
+                }
+            }];
         }];
-    }];
-    [promisesList addObject:countPromise];
-    [promisesList addObject:lastAlertPromise];
-    [self.conversationsList addObject:newConversation];
+        [promisesList addObject:countPromise];
+        [promisesList addObject:lastAlertPromise];
+        [self.conversationsList addObject:newConversation];
+    }
 
     // Process the promises
     [PMKPromise when:promisesList].then(^(NSArray *results){
@@ -310,27 +314,8 @@
         NSLog(@"%@",error);
     }).finally(^{
         [self.tableView reloadData];
-        [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"com.silverline.companion.addseniorreload"];
         [self.refreshControl endRefreshing];
     });
-    [[shareItemManager sharedInstance] updateUnreadMessageCount:^(BOOL succeed, NSError *error) {
-        [[NSNotificationCenter defaultCenter]
-         postNotificationName:@"updateTabBarBadgeNumber"
-         object:self
-         userInfo:nil];
-    }];
-}
-
-- (void)didReceiveRemoteNotification:(NSNotification *)notif{
-    NSString * objectId = notif.userInfo[@"pid"];
-    PFQuery * messageQuery = [Message query];
-    MessagesViewController __weak * weakSelf = self;
-    [messageQuery getObjectInBackgroundWithId:objectId block:^(PFObject * object, NSError *error) {
-        if(!error && object){
-            NSString * senderId = ((Message *)object).senderId;
-            [weakSelf updateConversation:senderId];
-        }
-    }];
     [[shareItemManager sharedInstance] updateUnreadMessageCount:^(BOOL succeed, NSError *error) {
         [[NSNotificationCenter defaultCenter]
          postNotificationName:@"updateTabBarBadgeNumber"
@@ -386,6 +371,24 @@
             [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:i inSection:0]] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
     }
+}
+
+- (void)didReceiveRemoteNotification:(NSNotification *)notif{
+    NSString * objectId = notif.userInfo[@"pid"];
+    PFQuery * messageQuery = [Message query];
+    MessagesViewController __weak * weakSelf = self;
+    [messageQuery getObjectInBackgroundWithId:objectId block:^(PFObject * object, NSError *error) {
+        if(!error && object){
+            NSString * senderId = ((Message *)object).senderId;
+            [weakSelf updateConversation:senderId];
+        }
+    }];
+    [[shareItemManager sharedInstance] updateUnreadMessageCount:^(BOOL succeed, NSError *error) {
+        [[NSNotificationCenter defaultCenter]
+         postNotificationName:@"updateTabBarBadgeNumber"
+         object:self
+         userInfo:nil];
+    }];
 }
 
 - (void)didReceiveInboxNotification:(NSNotification *)notif{

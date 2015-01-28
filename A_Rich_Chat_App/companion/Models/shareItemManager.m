@@ -22,6 +22,10 @@
         _sharedObject = [[self alloc] init];
         if(_sharedObject){
             _sharedObject.tabBarItemBadgeNumber = @0;
+            _sharedObject.isSystemAlertOn = [[NSUserDefaults standardUserDefaults] boolForKey:@"com.silverline.companion.issystemalerton"];
+            _sharedObject.needUpdateMessagePage = NO;
+            _sharedObject.isSeniorDeleted = [[NSUserDefaults standardUserDefaults] boolForKey:@"com.silverline.companion.isseniordeleted"];
+            _sharedObject.isSeniorAdded = [[NSUserDefaults standardUserDefaults] boolForKey:@"com.silverline.companion.issenioradded"];
         }
     });
     
@@ -39,6 +43,25 @@
         [idList addObject:object.objectId];
     }
     return idList;
+}
+
+- (void)setIsSystemAlertOn:(BOOL)isSystemAlertOn{
+    _isSystemAlertOn = isSystemAlertOn;
+    _needUpdateMessagePage = YES;
+    [[NSUserDefaults standardUserDefaults] setBool:_isSystemAlertOn forKey:@"com.silverline.companion.issystemalerton"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void)setIsSeniorDeleted:(BOOL)isSeniorDeleted{
+    _isSeniorDeleted = isSeniorDeleted;
+    [[NSUserDefaults standardUserDefaults] setBool:_isSeniorDeleted forKey:@"com.silverline.companion.isseniordeleted"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void)setIsSeniorAdded:(BOOL)isSeniorAdded{
+    _isSeniorAdded = isSeniorAdded;
+    [[NSUserDefaults standardUserDefaults] setBool:_isSeniorAdded forKey:@"com.silverline.companion.issenioradded"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)updateUnreadMessageCount:(void(^)(BOOL succeed, NSError * error))completion{

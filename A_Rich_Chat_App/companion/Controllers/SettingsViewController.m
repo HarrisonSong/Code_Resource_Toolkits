@@ -8,6 +8,7 @@
 
 #import "SettingsViewController.h"
 #import "WebViewController.h"
+#import "shareItemManager.h"
 #import <Parse/Parse.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 
@@ -16,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *AboutSilverlineLabel;
 @property (weak, nonatomic) IBOutlet UILabel *PrivacyPolicyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *TermsOfServiceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *SystemAlertLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *SystemAlertSwitch;
 @property (weak, nonatomic) IBOutlet UILabel *LogoutLabel;
 
 @end
@@ -30,20 +33,21 @@
     self.AboutSilverlineLabel.font = [UIFont fontWithName:@"OpenSans" size:16.0];
     self.PrivacyPolicyLabel.font = [UIFont fontWithName:@"OpenSans" size:16.0];
     self.TermsOfServiceLabel.font = [UIFont fontWithName:@"OpenSans" size:16.0];
+    self.SystemAlertLabel.font = [UIFont fontWithName:@"OpenSans" size:16.0];
     self.LogoutLabel.font = [UIFont fontWithName:@"OpenSans-Light" size:17.0];
     
     self.tableView.backgroundColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0];
+    
+    [self.SystemAlertSwitch addTarget:self action:@selector(onSystemAlertSwitchToggle:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
     if(section == 0){
         return 3;
     }else{
@@ -98,7 +102,7 @@
                 break;
         }
         [self.navigationController pushViewController:WebVC animated:YES];
-    }else if(indexPath.section == 1){
+    }else if(indexPath.section == 2){
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         UIActionSheet * logoutSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Confirm to logout?",@"logout alert message") delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", @"cancel") destructiveButtonTitle:NSLocalizedString(@"Log Out", @"log out string") otherButtonTitles:nil];
         [logoutSheet showInView:self.view];
@@ -124,6 +128,11 @@
         [SVProgressHUD dismiss];
         [window setRootViewController:loginNaviVC];
     }
+}
+
+#pragma mark - Helper Methods
+- (void)onSystemAlertSwitchToggle:(UISwitch *)sender{
+    [shareItemManager sharedInstance].isSystemAlertOn = sender.isOn;
 }
 
 @end

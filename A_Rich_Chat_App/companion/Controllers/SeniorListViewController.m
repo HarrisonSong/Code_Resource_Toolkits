@@ -124,9 +124,7 @@
                         [weakSelf.tableView beginUpdates];
                         [weakSelf.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
                         [weakSelf.tableView endUpdates];
-                        NSUserDefaults * userDefault = [NSUserDefaults standardUserDefaults];
-                        [userDefault setObject:@YES forKey:@"com.silverline.companion.iscachedirty"];
-                        [userDefault synchronize];
+                        [shareItemManager sharedInstance].isSeniorDeleted = YES;
                         [weakSelf reloadSeniorListWithOnlyNetwork];
                     }else{
                         [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"Failed to remove the member. Please try again.", @"remove senior error message")];
@@ -228,7 +226,7 @@
 
 - (void)didReceiveRemoteNotification:(NSNotification *)notif{
     if([notif.name isEqualToString:@"UIApplicationDidReceiveRemoteAsNotification"]){
-        [[NSUserDefaults standardUserDefaults] setObject:@YES forKey:@"com.silverline.companion.addseniorreload"];
+        [shareItemManager sharedInstance].isSeniorAdded = YES;
     }
     [self reloadSeniorList:kPFCachePolicyNetworkOnly];
 }

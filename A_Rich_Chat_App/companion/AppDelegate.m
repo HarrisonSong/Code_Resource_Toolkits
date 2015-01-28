@@ -80,6 +80,12 @@
     currentInstallation.badge = 0;
     [currentInstallation saveInBackground];
     
+    // Register userDefaults data
+    NSDictionary *userDefaultsDefaults = @{@"com.silverline.companion.issystemalerton":@NO,
+                                           @"com.silverline.companion.isseniordeleted":@NO,
+                                           @"com.silverline.companion.issenioradded":@NO};
+    [[NSUserDefaults standardUserDefaults] registerDefaults:userDefaultsDefaults];
+    
     return YES;
 }
 

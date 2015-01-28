@@ -12,6 +12,10 @@
 
 @property (nonatomic, assign) NSNumber * tabBarItemBadgeNumber;
 @property (nonatomic, strong) NSMutableArray * seniorList;
+@property (nonatomic, assign) BOOL isSystemAlertOn;
+@property (nonatomic, assign) BOOL needUpdateMessagePage;
+@property (nonatomic, assign) BOOL isSeniorDeleted;
+@property (nonatomic, assign) BOOL isSeniorAdded;
 
 + (shareItemManager *)sharedInstance;
 
