@@ -1,4 +1,4 @@
 CodeSnippet
 ===========
 
-Useful code collection
+some useful code collections
