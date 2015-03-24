@@ -12,24 +12,20 @@
 	<dict>
 		<key>CD054DEC59E8030BF0775DDF3CAE5D4146668B21</key>
 		<string>https://github.com/HarrisonSong/Code_Resource_Toolkits.git</string>
-		<key>FE7B73A94F8AD8BEDD7E4782B5E2055E50FCC453</key>
-		<string>https://github.com/newtoncircus/Silverline-Companion-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>companion.xcworkspace</string>
+	<string>A_Rich_Chat_App/companion.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CD054DEC59E8030BF0775DDF3CAE5D4146668B21</key>
 		<string>../..</string>
-		<key>FE7B73A94F8AD8BEDD7E4782B5E2055E50FCC453</key>
-		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/newtoncircus/Silverline-Companion-iOS.git</string>
+	<string>https://github.com/HarrisonSong/Code_Resource_Toolkits.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>FE7B73A94F8AD8BEDD7E4782B5E2055E50FCC453</string>
+	<string>CD054DEC59E8030BF0775DDF3CAE5D4146668B21</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -38,15 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>CD054DEC59E8030BF0775DDF3CAE5D4146668B21</string>
 			<key>IDESourceControlWCCName</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>FE7B73A94F8AD8BEDD7E4782B5E2055E50FCC453</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Silverline-Companion-iOS</string>
+			<string>Code_Resource_Toolkits</string>
 		</dict>
 	</array>
 </dict>
