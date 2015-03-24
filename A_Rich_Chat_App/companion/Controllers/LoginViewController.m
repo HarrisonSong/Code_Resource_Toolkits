@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "WebViewController.h"
 #import "shareItemManager.h"
+#import "EmailLoginViewController.h"
 
 #import <Parse/Parse.h>
 #import <FacebookSDK/FacebookSDK.h>
@@ -22,10 +23,13 @@
 @property (weak, nonatomic) IBOutlet UIButton *TermsButton;
 @property (weak, nonatomic) IBOutlet UIButton *PolicyButton;
 @property (weak, nonatomic) IBOutlet UIButton *LoginButton;
+@property (weak, nonatomic) IBOutlet UIButton *EmailLoginButton;
 
 - (IBAction)onTermsButtonPressed:(UIButton *)sender;
 - (IBAction)onPolicyButtonPressed:(UIButton *)sender;
 - (IBAction)FacebookLoginButtonPressed:(UIButton *)sender;
+- (IBAction)onEmailLoginButtonPressed:(UIButton *)sender;
+
 @end
 
 @implementation LoginViewController
@@ -44,6 +48,7 @@
     }else{
         self.LoginButton.titleLabel.font = [UIFont fontWithName:@"OpenSans" size:18.0];
     }
+    self.EmailLoginButton.titleLabel.font = [UIFont fontWithName:@"OpenSans" size:24.0];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -106,6 +111,12 @@
             }];
         }
     }];
+}
+
+- (IBAction)onEmailLoginButtonPressed:(UIButton *)sender {
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UINavigationController * emailLoginVC = [storyboard instantiateViewControllerWithIdentifier:@"EmailLoginNavi"];
+    [self presentViewController:emailLoginVC animated:YES completion:nil];
 }
 
 - (void)presentNextPageAfterLogin:(BOOL)animated {

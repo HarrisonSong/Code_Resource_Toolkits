@@ -1,0 +1,1 @@
+../../../MobileAppTracker/MATEventItem.h

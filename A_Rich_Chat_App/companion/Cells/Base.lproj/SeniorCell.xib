@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -80,7 +80,7 @@
                             <constraint firstAttribute="trailing" secondItem="0Jq-cZ-AF9" secondAttribute="trailing" constant="18" id="u3d-8s-yGQ"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultAvatarImage" translatesAutoresizingMaskIntoConstraints="NO" id="L3w-Vt-bVe" userLabel="Avatar">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultAvatarImage" translatesAutoresizingMaskIntoConstraints="NO" id="L3w-Vt-bVe" userLabel="Avatar">
                         <rect key="frame" x="8" y="15" width="130" height="134"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="150" id="3Q0-GA-0qv"/>

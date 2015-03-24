@@ -26,3 +26,7 @@ extern NSString *const ParseDEVAppID;
 extern NSString *const ParseDEVClientKey;
 extern NSString *const ParseLiveAppID;
 extern NSString *const ParseLiveClientKey;
+
+//MAT crendentials
+extern NSString *const MATAdvertiserId;
+extern NSString *const MATConversionKey;

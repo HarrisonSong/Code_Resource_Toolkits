@@ -172,7 +172,7 @@
         }];
     }];
     PMKPromise * updateHomeStatusTodayPromise = [PMKPromise new:^(PMKPromiseFulfiller fulfill, PMKPromiseRejecter reject) {
-        [weakSelf updateBasicInfo:^(BOOL succeed, NSError *error) {
+        [weakSelf updateHomeStatusToday:^(BOOL succeed, NSError *error) {
             if(succeed){
                 fulfill(@"successful");
             }else{
@@ -220,6 +220,7 @@
     [self.senior.profileImage getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
         if(!error && data){
             self.profileImage.image = [UIImage imageWithData:data];
+            self.profileImage.clipsToBounds = YES;
             completion(YES, nil);
         }else{
             completion(NO, error);
@@ -256,32 +257,22 @@
 }
 
 - (void)updateHomeStatusToday:(void(^)(BOOL succeed, NSError * error))completion{
-    PFQuery * SeniorSensorQuery = [PFQuery queryWithClassName:@"SeniorSensor"];
-    [SeniorSensorQuery whereKey:@"userId" equalTo:self.senior.userId];
-    [SeniorSensorQuery whereKey:@"type" equalTo:@"proximity"];
-    [SeniorSensorQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error1) {
-        if(!error1 && objects.count > 0){
-            PFObject *  SeniorSensor = objects[0];
-            NSString * sensorUrl = [NSString stringWithFormat:@"http://sensor.silverline.mobi:8080/sensors/%@/last-event" ,SeniorSensor[@"sensorId"]];
-            NSURLSession *session = [NSURLSession sharedSession];
-            [session dataTaskWithURL:[NSURL URLWithString:sensorUrl] completionHandler:^(NSData *data, NSURLResponse *response, NSError * error2) {
-                if(!error2 && data){
-                    NSDictionary * result = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-                    if([result[@"value"] isEqualToString:@"false"]){
-                        self.homeStatus.text = NSLocalizedString(@"Out of Home", @"out of home stataus");
-                    }else{
-                        self.homeStatus.text = NSLocalizedString(@"In Home", @"in home status");
-                    }
-                    completion(YES, nil);
-                }else{
-                    self.homeStatus.text = NSLocalizedString(@"Out of Home", @"out of home status");
-                    completion(NO, error2);
-                }
-            }];
+    PFQuery * lastLocationQuery = [PFQuery queryWithClassName:@"LastLocation"];
+    [lastLocationQuery whereKey:@"userId" equalTo:self.senior.userId];
+    [lastLocationQuery orderByDescending:@"updatedAt"];
+    [lastLocationQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if(!error && objects.count > 0){
+            PFObject * lastLocation = objects[0];
+            double distance = [self.senior.location distanceInKilometersTo:lastLocation[@"location"]];
+            if(distance > 0.015){
+                self.homeStatus.text = NSLocalizedString(@"Out of Home", @"out of home stataus");
+            }else{
+                self.homeStatus.text = NSLocalizedString(@"In Home (within 100m)", @"in home status");
+            }
         }else{
-            self.homeStatus.text = NSLocalizedString(@"Out of Home", @"out of home status");
-            completion(NO, error1);
+            self.homeStatus.text = NSLocalizedString(@"Out of Home", @"out of home stataus");
         }
+        completion(YES, nil);
     }];
 }
 

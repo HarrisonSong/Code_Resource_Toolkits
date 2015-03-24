@@ -12,8 +12,9 @@
 #import <SVProgressHUD/SVProgressHUD.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
+#import <MessageUI/MessageUI.h>
 
-@interface AddSeniorViewController () <UIGestureRecognizerDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
+@interface AddSeniorViewController () <UIGestureRecognizerDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate, MFMessageComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *AddUserTitle;
 @property (weak, nonatomic) IBOutlet UITextField *CountryCodeField;
 @property (weak, nonatomic) IBOutlet UITextField *MobileNoField;
@@ -121,6 +122,8 @@
 }
 
 - (IBAction)AddSeniorButtonPressed:(id)sender {
+    [self.view endEditing:YES];
+    
     NSString * phoneNumber = [NSString stringWithFormat:@"+%@%@",self.countryDialingCode, self.MobileNoField.text];
     PFQuery * SeniorQuery = [PFQuery queryWithClassName:@"Senior"];
     [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
@@ -174,8 +177,17 @@
             if(error){
                 [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"Failed to check member data. Please try again.", @"Senior query error message")];
             }else{
-                // The targeting user does not exist. Warn.
-                [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"The specific member has not been verified yet.",@"Senior not verified message")];
+                // The targeting user does not exist. Provide option for sending SMS.
+                [SVProgressHUD dismiss];
+                UIAlertController * alertController = [UIAlertController alertControllerWithTitle:nil message:NSLocalizedString(@"The member you want to pair does not exist. Do you want to invite him to install Silverline application?", @"Siverline app invitation message") preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction * cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"cancel button content") style:UIAlertActionStyleCancel handler:nil];
+                UIAlertAction * okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"ok button content") style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+                    NSString * SMSContent = [NSString stringWithFormat:@"%@ %@ wants to add you as a Companion. To accept the invitation please click: http://silverline-dev.parseapp.com", [PFUser currentUser][@"firstName"],[PFUser currentUser][@"lastName"]];
+                    [weakSelf showSMS:NSLocalizedString(SMSContent, @"SMS content")];
+                }];
+                [alertController addAction:cancelAction];
+                [alertController addAction:okAction];
+                [weakSelf presentViewController:alertController animated:YES completion:nil];
             }
         }
     }];
@@ -279,10 +291,31 @@
 }
 
 #pragma mark - UI PickerView Delegate
--(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     self.CountryCodeField.text = [NSString stringWithFormat:@"+%@", self.codeDictionary[self.countryCodes[row]][@"DialingCode"]];
     self.countryDialingCode = [NSString stringWithFormat:@"%@", self.codeDictionary[self.countryCodes[row]][@"DialingCode"]];
     [self.CountryCodeField resignFirstResponder];
+}
+
+#pragma mark - UI MessageComposeView Delegate
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result{
+    AddSeniorViewController * __weak weakSelf = self;
+    [self dismissViewControllerAnimated:YES completion:^{
+        if(result == MessageComposeResultFailed){
+            UIAlertController * alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error title") message:NSLocalizedString(@"Failed to Send the SMS.", @"SMS sending failure message.") preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction * okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"ok button content") style:UIAlertActionStyleCancel handler:nil];
+            [alertController addAction:okAction];
+            [weakSelf presentViewController:alertController animated:YES completion:nil];
+        }else if(result == MessageComposeResultSent){
+            double delayInSeconds = 0.5;
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+            dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                //code to be executed on the main queue after delay
+                [weakSelf dismissViewControllerAnimated:YES completion:nil];
+            });
+        }
+    }];
 }
 
 #pragma mark - helper methods
@@ -302,6 +335,25 @@
         self.AddSeniorButton.enabled = NO;
         self.AddSeniorButton.alpha = 0.6;
     }
+}
+
+- (void)showSMS:(NSString *)content{
+    if(![MFMessageComposeViewController canSendText]){
+        UIAlertController * alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", @"Error title") message:NSLocalizedString(@"You phone cannot send SMS now.", @"Device no-SMS function alert message.") preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction * okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"ok button content") style:UIAlertActionStyleCancel handler:nil];
+        [alertController addAction:okAction];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+    
+    NSString * phoneNumber = [NSString stringWithFormat:@"+%@%@",self.countryDialingCode, self.MobileNoField.text];
+    NSArray *recipents = @[phoneNumber];
+    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
+    messageController.messageComposeDelegate = self;
+    [messageController setRecipients:recipents];
+    [messageController setBody:content];
+    
+    // Present message view controller on screen
+    [self presentViewController:messageController animated:YES completion:nil];
 }
 
 @end

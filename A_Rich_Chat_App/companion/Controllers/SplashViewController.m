@@ -27,8 +27,7 @@
     [super viewDidAppear:YES];
     // Do any additional setup after loading the view.
     UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    if ([PFUser currentUser] && // Check if user is cached
-        [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) { // Check if user is linked to Facebook
+    if ([PFUser currentUser]) { // Check if user is cached
         PFInstallation * currentInstallation = [PFInstallation currentInstallation];
         currentInstallation[@"owner"] = [PFUser currentUser].objectId;
         [currentInstallation saveInBackground];

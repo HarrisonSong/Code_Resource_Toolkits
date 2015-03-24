@@ -1,159 +1,160 @@
 PODS:
-  - AWSiOSSDKv2 (2.0.13):
-    - AWSiOSSDKv2/AutoScaling (= 2.0.13)
-    - AWSiOSSDKv2/AWSCore (= 2.0.13)
-    - AWSiOSSDKv2/CloudWatch (= 2.0.13)
-    - AWSiOSSDKv2/DynamoDB (= 2.0.13)
-    - AWSiOSSDKv2/EC2 (= 2.0.13)
-    - AWSiOSSDKv2/ElasticLoadBalancing (= 2.0.13)
-    - AWSiOSSDKv2/Kinesis (= 2.0.13)
-    - AWSiOSSDKv2/S3 (= 2.0.13)
-    - AWSiOSSDKv2/SES (= 2.0.13)
-    - AWSiOSSDKv2/SimpleDB (= 2.0.13)
-    - AWSiOSSDKv2/SNS (= 2.0.13)
-    - AWSiOSSDKv2/SQS (= 2.0.13)
+  - AWSiOSSDKv2 (2.0.17):
+    - AWSiOSSDKv2/AutoScaling (= 2.0.17)
+    - AWSiOSSDKv2/AWSCore (= 2.0.17)
+    - AWSiOSSDKv2/CloudWatch (= 2.0.17)
+    - AWSiOSSDKv2/DynamoDB (= 2.0.17)
+    - AWSiOSSDKv2/EC2 (= 2.0.17)
+    - AWSiOSSDKv2/ElasticLoadBalancing (= 2.0.17)
+    - AWSiOSSDKv2/Kinesis (= 2.0.17)
+    - AWSiOSSDKv2/S3 (= 2.0.17)
+    - AWSiOSSDKv2/SES (= 2.0.17)
+    - AWSiOSSDKv2/SimpleDB (= 2.0.17)
+    - AWSiOSSDKv2/SNS (= 2.0.17)
+    - AWSiOSSDKv2/SQS (= 2.0.17)
     - Bolts (~> 1.1.0)
-    - FMDB (~> 2.4.0)
+    - FMDB (~> 2.4)
     - GZIP (~> 1.0.3)
-    - Mantle (~> 1.4.1)
-    - Reachability (~> 3.1.1)
+    - Mantle (~> 1.4)
+    - Reachability (~> 3.1)
     - TMCache (~> 1.2.1)
-    - UICKeyChainStore (~> 1.0.5)
+    - UICKeyChainStore (< 3.0)
     - XMLDictionary (~> 1.4.0)
-  - AWSiOSSDKv2/AutoScaling (2.0.13):
+  - AWSiOSSDKv2/AutoScaling (2.0.17):
     - AWSiOSSDKv2/AWSCore
     - Bolts (~> 1.1.0)
-    - FMDB (~> 2.4.0)
+    - FMDB (~> 2.4)
     - GZIP (~> 1.0.3)
-    - Mantle (~> 1.4.1)
-    - Reachability (~> 3.1.1)
+    - Mantle (~> 1.4)
+    - Reachability (~> 3.1)
     - TMCache (~> 1.2.1)
-    - UICKeyChainStore (~> 1.0.5)
+    - UICKeyChainStore (< 3.0)
     - XMLDictionary (~> 1.4.0)
-  - AWSiOSSDKv2/AWSCore (2.0.13):
+  - AWSiOSSDKv2/AWSCore (2.0.17):
     - Bolts (~> 1.1.0)
-    - FMDB (~> 2.4.0)
+    - FMDB (~> 2.4)
     - GZIP (~> 1.0.3)
-    - Mantle (~> 1.4.1)
-    - Reachability (~> 3.1.1)
+    - Mantle (~> 1.4)
+    - Reachability (~> 3.1)
     - TMCache (~> 1.2.1)
-    - UICKeyChainStore (~> 1.0.5)
+    - UICKeyChainStore (< 3.0)
     - XMLDictionary (~> 1.4.0)
-  - AWSiOSSDKv2/CloudWatch (2.0.13):
+  - AWSiOSSDKv2/CloudWatch (2.0.17):
     - AWSiOSSDKv2/AWSCore
     - Bolts (~> 1.1.0)
-    - FMDB (~> 2.4.0)
+    - FMDB (~> 2.4)
     - GZIP (~> 1.0.3)
-    - Mantle (~> 1.4.1)
-    - Reachability (~> 3.1.1)
+    - Mantle (~> 1.4)
+    - Reachability (~> 3.1)
     - TMCache (~> 1.2.1)
-    - UICKeyChainStore (~> 1.0.5)
+    - UICKeyChainStore (< 3.0)
     - XMLDictionary (~> 1.4.0)
-  - AWSiOSSDKv2/DynamoDB (2.0.13):
+  - AWSiOSSDKv2/DynamoDB (2.0.17):
     - AWSiOSSDKv2/AWSCore
     - Bolts (~> 1.1.0)
-    - FMDB (~> 2.4.0)
+    - FMDB (~> 2.4)
     - GZIP (~> 1.0.3)
-    - Mantle (~> 1.4.1)
-    - Reachability (~> 3.1.1)
+    - Mantle (~> 1.4)
+    - Reachability (~> 3.1)
     - TMCache (~> 1.2.1)
-    - UICKeyChainStore (~> 1.0.5)
+    - UICKeyChainStore (< 3.0)
     - XMLDictionary (~> 1.4.0)
-  - AWSiOSSDKv2/EC2 (2.0.13):
+  - AWSiOSSDKv2/EC2 (2.0.17):
     - AWSiOSSDKv2/AWSCore
     - Bolts (~> 1.1.0)
-    - FMDB (~> 2.4.0)
+    - FMDB (~> 2.4)
     - GZIP (~> 1.0.3)
-    - Mantle (~> 1.4.1)
-    - Reachability (~> 3.1.1)
+    - Mantle (~> 1.4)
+    - Reachability (~> 3.1)
     - TMCache (~> 1.2.1)
-    - UICKeyChainStore (~> 1.0.5)
+    - UICKeyChainStore (< 3.0)
     - XMLDictionary (~> 1.4.0)
-  - AWSiOSSDKv2/ElasticLoadBalancing (2.0.13):
+  - AWSiOSSDKv2/ElasticLoadBalancing (2.0.17):
     - AWSiOSSDKv2/AWSCore
     - Bolts (~> 1.1.0)
-    - FMDB (~> 2.4.0)
+    - FMDB (~> 2.4)
     - GZIP (~> 1.0.3)
-    - Mantle (~> 1.4.1)
-    - Reachability (~> 3.1.1)
+    - Mantle (~> 1.4)
+    - Reachability (~> 3.1)
     - TMCache (~> 1.2.1)
-    - UICKeyChainStore (~> 1.0.5)
+    - UICKeyChainStore (< 3.0)
     - XMLDictionary (~> 1.4.0)
-  - AWSiOSSDKv2/Kinesis (2.0.13):
+  - AWSiOSSDKv2/Kinesis (2.0.17):
     - AWSiOSSDKv2/AWSCore
     - Bolts (~> 1.1.0)
-    - FMDB (~> 2.4.0)
+    - FMDB (~> 2.4)
     - GZIP (~> 1.0.3)
-    - Mantle (~> 1.4.1)
-    - Reachability (~> 3.1.1)
+    - Mantle (~> 1.4)
+    - Reachability (~> 3.1)
     - TMCache (~> 1.2.1)
-    - UICKeyChainStore (~> 1.0.5)
+    - UICKeyChainStore (< 3.0)
     - XMLDictionary (~> 1.4.0)
-  - AWSiOSSDKv2/S3 (2.0.13):
+  - AWSiOSSDKv2/S3 (2.0.17):
     - AWSiOSSDKv2/AWSCore
     - Bolts (~> 1.1.0)
-    - FMDB (~> 2.4.0)
+    - FMDB (~> 2.4)
     - GZIP (~> 1.0.3)
-    - Mantle (~> 1.4.1)
-    - Reachability (~> 3.1.1)
+    - Mantle (~> 1.4)
+    - Reachability (~> 3.1)
     - TMCache (~> 1.2.1)
-    - UICKeyChainStore (~> 1.0.5)
+    - UICKeyChainStore (< 3.0)
     - XMLDictionary (~> 1.4.0)
-  - AWSiOSSDKv2/SES (2.0.13):
+  - AWSiOSSDKv2/SES (2.0.17):
     - AWSiOSSDKv2/AWSCore
     - Bolts (~> 1.1.0)
-    - FMDB (~> 2.4.0)
+    - FMDB (~> 2.4)
     - GZIP (~> 1.0.3)
-    - Mantle (~> 1.4.1)
-    - Reachability (~> 3.1.1)
+    - Mantle (~> 1.4)
+    - Reachability (~> 3.1)
     - TMCache (~> 1.2.1)
-    - UICKeyChainStore (~> 1.0.5)
+    - UICKeyChainStore (< 3.0)
     - XMLDictionary (~> 1.4.0)
-  - AWSiOSSDKv2/SimpleDB (2.0.13):
+  - AWSiOSSDKv2/SimpleDB (2.0.17):
     - AWSiOSSDKv2/AWSCore
     - Bolts (~> 1.1.0)
-    - FMDB (~> 2.4.0)
+    - FMDB (~> 2.4)
     - GZIP (~> 1.0.3)
-    - Mantle (~> 1.4.1)
-    - Reachability (~> 3.1.1)
+    - Mantle (~> 1.4)
+    - Reachability (~> 3.1)
     - TMCache (~> 1.2.1)
-    - UICKeyChainStore (~> 1.0.5)
+    - UICKeyChainStore (< 3.0)
     - XMLDictionary (~> 1.4.0)
-  - AWSiOSSDKv2/SNS (2.0.13):
+  - AWSiOSSDKv2/SNS (2.0.17):
     - AWSiOSSDKv2/AWSCore
     - Bolts (~> 1.1.0)
-    - FMDB (~> 2.4.0)
+    - FMDB (~> 2.4)
     - GZIP (~> 1.0.3)
-    - Mantle (~> 1.4.1)
-    - Reachability (~> 3.1.1)
+    - Mantle (~> 1.4)
+    - Reachability (~> 3.1)
     - TMCache (~> 1.2.1)
-    - UICKeyChainStore (~> 1.0.5)
+    - UICKeyChainStore (< 3.0)
     - XMLDictionary (~> 1.4.0)
-  - AWSiOSSDKv2/SQS (2.0.13):
+  - AWSiOSSDKv2/SQS (2.0.17):
     - AWSiOSSDKv2/AWSCore
     - Bolts (~> 1.1.0)
-    - FMDB (~> 2.4.0)
+    - FMDB (~> 2.4)
     - GZIP (~> 1.0.3)
-    - Mantle (~> 1.4.1)
-    - Reachability (~> 3.1.1)
+    - Mantle (~> 1.4)
+    - Reachability (~> 3.1)
     - TMCache (~> 1.2.1)
-    - UICKeyChainStore (~> 1.0.5)
+    - UICKeyChainStore (< 3.0)
     - XMLDictionary (~> 1.4.0)
-  - Bolts (1.1.3)
-  - Facebook-iOS-SDK (3.22.0):
+  - Bolts (1.1.4)
+  - Facebook-iOS-SDK (3.23.1):
     - Bolts (~> 1.0)
-  - FMDB (2.4):
-    - FMDB/standard (= 2.4)
-  - FMDB/common (2.4)
-  - FMDB/standard (2.4):
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
     - FMDB/common
   - GGFullscreenImageViewController (1.0.0)
   - GZIP (1.0.3)
   - HockeySDK (3.6.2)
   - JSBadgeView (1.3.2)
-  - Mantle (1.4.1):
-    - Mantle/extobjc (= 1.4.1)
-  - Mantle/extobjc (1.4.1)
+  - Mantle (1.5.4):
+    - Mantle/extobjc (= 1.5.4)
+  - Mantle/extobjc (1.5.4)
+  - MobileAppTracker (3.8)
   - OMGHTTPURLRQ (2.1):
     - OMGHTTPURLRQ/RQ (= 2.1)
   - OMGHTTPURLRQ/FormURLEncode (2.1)
@@ -161,52 +162,52 @@ PODS:
     - OMGHTTPURLRQ/FormURLEncode
     - OMGHTTPURLRQ/UserAgent
   - OMGHTTPURLRQ/UserAgent (2.1)
-  - Parse (1.6.1):
-    - Bolts (~> 1.1.3)
-  - ParseFacebookUtils (1.6.1):
+  - Parse (1.6.4):
+    - Bolts (~> 1.1)
+  - ParseFacebookUtils (1.6.4):
     - Facebook-iOS-SDK (~> 3.20)
-    - Parse (~> 1.6.1)
-  - PromiseKit (1.2):
-    - PromiseKit/CALayer (= 1.2)
-    - PromiseKit/NSNotificationCenter (= 1.2)
-    - PromiseKit/NSURLConnection (= 1.2)
-    - PromiseKit/Pause (= 1.2)
-    - PromiseKit/UIActionSheet (= 1.2)
-    - PromiseKit/UIAlertView (= 1.2)
-    - PromiseKit/UIView (= 1.2)
-    - PromiseKit/UIViewController (= 1.2)
-    - PromiseKit/Until (= 1.2)
-    - PromiseKit/When (= 1.2)
-  - PromiseKit/CALayer (1.2):
+    - Parse (~> 1.6.4)
+  - PromiseKit (1.4.0):
+    - PromiseKit/CALayer (= 1.4.0)
+    - PromiseKit/NSNotificationCenter (= 1.4.0)
+    - PromiseKit/NSURLConnection (= 1.4.0)
+    - PromiseKit/Pause (= 1.4.0)
+    - PromiseKit/UIActionSheet (= 1.4.0)
+    - PromiseKit/UIAlertView (= 1.4.0)
+    - PromiseKit/UIView (= 1.4.0)
+    - PromiseKit/UIViewController (= 1.4.0)
+    - PromiseKit/Until (= 1.4.0)
+    - PromiseKit/When (= 1.4.0)
+  - PromiseKit/CALayer (1.4.0):
     - PromiseKit/Promise
-  - PromiseKit/NSNotificationCenter (1.2):
+  - PromiseKit/NSNotificationCenter (1.4.0):
     - PromiseKit/Promise
-  - PromiseKit/NSURLConnection (1.2):
+  - PromiseKit/NSURLConnection (1.4.0):
     - OMGHTTPURLRQ
     - PromiseKit/Promise
-  - PromiseKit/Pause (1.2):
+  - PromiseKit/Pause (1.4.0):
     - PromiseKit/Promise
-  - PromiseKit/Promise (1.2)
-  - PromiseKit/UIActionSheet (1.2):
+  - PromiseKit/Promise (1.4.0)
+  - PromiseKit/UIActionSheet (1.4.0):
     - PromiseKit/Promise
-  - PromiseKit/UIAlertView (1.2):
+  - PromiseKit/UIAlertView (1.4.0):
     - PromiseKit/Promise
-  - PromiseKit/UIView (1.2):
+  - PromiseKit/UIView (1.4.0):
     - PromiseKit/Promise
-  - PromiseKit/UIViewController (1.2):
+  - PromiseKit/UIViewController (1.4.0):
     - PromiseKit/Promise
-  - PromiseKit/Until (1.2):
+  - PromiseKit/Until (1.4.0):
     - PromiseKit/Promise
     - PromiseKit/When
-  - PromiseKit/When (1.2):
+  - PromiseKit/When (1.4.0):
     - PromiseKit/Promise
-  - Reachability (3.1.1)
-  - SDWebImage (3.7.1):
-    - SDWebImage/Core (= 3.7.1)
-  - SDWebImage/Core (3.7.1)
+  - Reachability (3.2)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
   - SVProgressHUD (1.1.2)
   - TMCache (1.2.3)
-  - UICKeyChainStore (1.0.5)
+  - UICKeyChainStore (2.0.4)
   - XMLDictionary (1.4)
 
 DEPENDENCIES:
@@ -215,6 +216,7 @@ DEPENDENCIES:
   - GGFullscreenImageViewController (~> 1.0)
   - HockeySDK
   - JSBadgeView
+  - MobileAppTracker
   - Parse
   - ParseFacebookUtils
   - PromiseKit
@@ -222,24 +224,25 @@ DEPENDENCIES:
   - SVProgressHUD
 
 SPEC CHECKSUMS:
-  AWSiOSSDKv2: 4cb6ddd3b1ec7a8d913669248b401b5bbd1c09c1
-  Bolts: 3db0a875235e0c9042b013af13af0f00f79b102c
-  Facebook-iOS-SDK: 0eda8ff7120aada0a9c5f98552f7625da6c3440a
-  FMDB: 0b2fa25e5264ef177973c0cb8c02c711107979aa
+  AWSiOSSDKv2: a463e466164c52814a624b5f3f70c986807f48e1
+  Bolts: dd9fb8433d67f5acc3b6b4d1379bbc5513d716c1
+  Facebook-iOS-SDK: 89dae50e975ebab95a01b0962d27277fc9cf08fd
+  FMDB: 0efa188cf0dd1ce82c27a478cd5f5fa245308677
   GGFullscreenImageViewController: 6ebe07a8427a286de1a27cbc6cb16a2b6226a488
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
   HockeySDK: bfd1f5ac75938b07499c4ac12932244b72a2e70b
   JSBadgeView: 75bec79d76e0eb01d57c9ce75b7c5ea8d6707955
-  Mantle: 1ca9c0fa84d3d3fc98524e7229f30489b6dd44e5
+  Mantle: d5fbaf30fbc58031223af13812c060e15934a1fe
+  MobileAppTracker: f55db30dcadf46c487bc15ba9130152379508215
   OMGHTTPURLRQ: f8c515dfd2f57a5d74c710978f600231f52afec5
-  Parse: b0ec7666167e212edb6fc94f60ba170248bd1869
-  ParseFacebookUtils: 7659dcda0fa59f67234ab7ba5a82a9b05073c59a
-  PromiseKit: 89cb68ff4093e71221a63ca7272d427bf34c4560
-  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
-  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  Parse: c2610f7a12ad0defc974803b819c4efe7746e6db
+  ParseFacebookUtils: 00833ccf6fec7d6429e2403fe457496a5089358b
+  PromiseKit: bd7f075f18cb751894546958b2eeb23995d7da3a
+  Reachability: 1ef8adf5c4e3d362f96515d4278f68dad3c26930
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   SVProgressHUD: da7a49e789af645d9279ffbca62318945a832438
   TMCache: 11589ef8c40909114a5e60132711c9a559e01d97
-  UICKeyChainStore: 4f9719600cc70025064e26f28f1210bcfc3b0c35
+  UICKeyChainStore: 2399076d0950e20fe859b8f817548cf6ca542dd7
   XMLDictionary: 735e81b9a043e220b0d24e9d4f16719606f2e0fc
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.36.0

@@ -14,6 +14,9 @@
 		F20B9C761A28699F00B078B5 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20B9C751A28699F00B078B5 /* LocationViewController.m */; };
 		F20B9C7A1A2870E300B078B5 /* SeniorLocationMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20B9C781A2870E300B078B5 /* SeniorLocationMessageCell.m */; };
 		F20B9C7B1A2870E300B078B5 /* SeniorLocationMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20B9C791A2870E300B078B5 /* SeniorLocationMessageCell.xib */; };
+		F20E5FDD1AA43CB700FD756B /* EmailLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E5FDC1AA43CB700FD756B /* EmailLoginViewController.m */; };
+		F20E5FE01AA44EA800FD756B /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E5FDF1AA44EA800FD756B /* RegisterViewController.m */; };
+		F20E5FE31AA46E0400FD756B /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E5FE21AA46E0400FD756B /* StartViewController.m */; };
 		F21B68B01A42B182001E43AB /* SeniorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21B68AF1A42B182001E43AB /* SeniorListViewController.m */; };
 		F21B68B31A42B1D2001E43AB /* AddSeniorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21B68B21A42B1D2001E43AB /* AddSeniorViewController.m */; };
 		F240561D1A369BED0000460D /* OpenSansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F24056131A369BED0000460D /* OpenSansBold.ttf */; };
@@ -75,6 +78,8 @@
 		F27702FB1A6644B8008CA91C /* sts-2011-06-15.json in Resources */ = {isa = PBXBuildFile; fileRef = F27702EC1A6644B8008CA91C /* sts-2011-06-15.json */; };
 		F2822B691A2731FD0058512E /* MyPhotoMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2822B671A2731FD0058512E /* MyPhotoMessageCell.m */; };
 		F2822B6A1A2731FD0058512E /* MyPhotoMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2822B681A2731FD0058512E /* MyPhotoMessageCell.xib */; };
+		F29AD4D11A8CFC7900B549A1 /* EnterpriseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AD4D01A8CFC7900B549A1 /* EnterpriseListViewController.m */; };
+		F29AD4D71A8CFDC500B549A1 /* EnterpriseContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29AD4D61A8CFDC500B549A1 /* EnterpriseContentViewController.m */; };
 		F29D985C1A3814ED0061DFED /* AlertsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29D985B1A3814ED0061DFED /* AlertsViewController.m */; };
 		F29D98601A3815D10061DFED /* AlertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F29D985E1A3815D10061DFED /* AlertCell.m */; };
 		F29D98611A3815D10061DFED /* AlertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29D985F1A3815D10061DFED /* AlertCell.xib */; };
@@ -109,6 +114,12 @@
 		F20B9C771A2870E300B078B5 /* SeniorLocationMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeniorLocationMessageCell.h; sourceTree = "<group>"; };
 		F20B9C781A2870E300B078B5 /* SeniorLocationMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeniorLocationMessageCell.m; sourceTree = "<group>"; };
 		F20B9C791A2870E300B078B5 /* SeniorLocationMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeniorLocationMessageCell.xib; sourceTree = "<group>"; };
+		F20E5FDB1AA43CB700FD756B /* EmailLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailLoginViewController.h; sourceTree = "<group>"; };
+		F20E5FDC1AA43CB700FD756B /* EmailLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailLoginViewController.m; sourceTree = "<group>"; };
+		F20E5FDE1AA44EA800FD756B /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		F20E5FDF1AA44EA800FD756B /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		F20E5FE11AA46E0400FD756B /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		F20E5FE21AA46E0400FD756B /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		F21B68AE1A42B182001E43AB /* SeniorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeniorListViewController.h; sourceTree = "<group>"; };
 		F21B68AF1A42B182001E43AB /* SeniorListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeniorListViewController.m; sourceTree = "<group>"; };
 		F21B68B11A42B1D2001E43AB /* AddSeniorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSeniorViewController.h; sourceTree = "<group>"; };
@@ -198,6 +209,10 @@
 		F2822B661A2731FD0058512E /* MyPhotoMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPhotoMessageCell.h; sourceTree = "<group>"; };
 		F2822B671A2731FD0058512E /* MyPhotoMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPhotoMessageCell.m; sourceTree = "<group>"; };
 		F2822B681A2731FD0058512E /* MyPhotoMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPhotoMessageCell.xib; sourceTree = "<group>"; };
+		F29AD4CF1A8CFC7900B549A1 /* EnterpriseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterpriseListViewController.h; sourceTree = "<group>"; };
+		F29AD4D01A8CFC7900B549A1 /* EnterpriseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterpriseListViewController.m; sourceTree = "<group>"; };
+		F29AD4D51A8CFDC500B549A1 /* EnterpriseContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterpriseContentViewController.h; sourceTree = "<group>"; };
+		F29AD4D61A8CFDC500B549A1 /* EnterpriseContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterpriseContentViewController.m; sourceTree = "<group>"; };
 		F29D985A1A3814ED0061DFED /* AlertsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertsViewController.h; sourceTree = "<group>"; };
 		F29D985B1A3814ED0061DFED /* AlertsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertsViewController.m; sourceTree = "<group>"; };
 		F29D985D1A3815D10061DFED /* AlertCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertCell.h; sourceTree = "<group>"; };
@@ -380,6 +395,16 @@
 				F20B9C751A28699F00B078B5 /* LocationViewController.m */,
 				F246F29D1A19B0930011EAF8 /* SettingsViewController.h */,
 				F246F29E1A19B0930011EAF8 /* SettingsViewController.m */,
+				F29AD4CF1A8CFC7900B549A1 /* EnterpriseListViewController.h */,
+				F29AD4D01A8CFC7900B549A1 /* EnterpriseListViewController.m */,
+				F29AD4D51A8CFDC500B549A1 /* EnterpriseContentViewController.h */,
+				F29AD4D61A8CFDC500B549A1 /* EnterpriseContentViewController.m */,
+				F20E5FDB1AA43CB700FD756B /* EmailLoginViewController.h */,
+				F20E5FDC1AA43CB700FD756B /* EmailLoginViewController.m */,
+				F20E5FDE1AA44EA800FD756B /* RegisterViewController.h */,
+				F20E5FDF1AA44EA800FD756B /* RegisterViewController.m */,
+				F20E5FE11AA46E0400FD756B /* StartViewController.h */,
+				F20E5FE21AA46E0400FD756B /* StartViewController.m */,
 			);
 			name = Controllers;
 			path = companion/Controllers;
@@ -654,6 +679,7 @@
 			files = (
 				F2B9F08E1A2D6CEA00FACC9C /* WellBeingViewController.m in Sources */,
 				F27702D31A661C22008CA91C /* SeniorVideoMessageCell.m in Sources */,
+				F29AD4D11A8CFC7900B549A1 /* EnterpriseListViewController.m in Sources */,
 				F246F26D1A19AFFA0011EAF8 /* AppDelegate.m in Sources */,
 				F246F2AE1A19B0930011EAF8 /* SettingsViewController.m in Sources */,
 				F246F2AB1A19B0930011EAF8 /* LoginViewController.m in Sources */,
@@ -664,8 +690,10 @@
 				F25043EE1A35623700AEF6B0 /* Conversation.m in Sources */,
 				F246F2AF1A19B0930011EAF8 /* SplashViewController.m in Sources */,
 				F246F26A1A19AFFA0011EAF8 /* main.m in Sources */,
+				F20E5FDD1AA43CB700FD756B /* EmailLoginViewController.m in Sources */,
 				F20B9C721A2854AE00B078B5 /* SeniorPhotoMessageCell.m in Sources */,
 				F25043F11A36019200AEF6B0 /* shareItemManager.m in Sources */,
+				F29AD4D71A8CFDC500B549A1 /* EnterpriseContentViewController.m in Sources */,
 				F246F2B01A19B0930011EAF8 /* Message.m in Sources */,
 				F246F2BA1A19B1120011EAF8 /* MessageCell.m in Sources */,
 				F27702DC1A66415F008CA91C /* Credential.m in Sources */,
@@ -680,6 +708,8 @@
 				F246F2BC1A19B1120011EAF8 /* SeniorCell.m in Sources */,
 				F240562A1A36CF440000460D /* WebViewController.m in Sources */,
 				F20B9C761A28699F00B078B5 /* LocationViewController.m in Sources */,
+				F20E5FE01AA44EA800FD756B /* RegisterViewController.m in Sources */,
+				F20E5FE31AA46E0400FD756B /* StartViewController.m in Sources */,
 				F21B68B01A42B182001E43AB /* SeniorListViewController.m in Sources */,
 				F24EA1E01A3043A800943665 /* GraphView.m in Sources */,
 				F20B9C7A1A2870E300B078B5 /* SeniorLocationMessageCell.m in Sources */,
@@ -849,6 +879,7 @@
 			baseConfigurationReference = C2F65E69F42C70B0D0486283 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = companion/Info.plist;
@@ -865,13 +896,14 @@
 			baseConfigurationReference = E0BC261A776189A99DC0C221 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Silverline Mobile Pte. Ltd. (UQJHWS9BQ5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Silverline Mobile Pte. Ltd. (UQJHWS9BQ5)";
 				INFOPLIST_FILE = companion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "ce2ef9b6-538b-4a38-bdab-458b9a8f1329";
 			};
 			name = Release;
 		};

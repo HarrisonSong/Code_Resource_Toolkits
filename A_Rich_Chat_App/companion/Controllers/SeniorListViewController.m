@@ -86,6 +86,7 @@
     [avatarImageFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
         if(!error && data != nil){
             cell.seniorPhoto.image = [UIImage imageWithData:data];
+            cell.seniorPhoto.clipsToBounds = YES;
         }else{
             NSLog(@"Failed to fetch senior avatar file.");
         }

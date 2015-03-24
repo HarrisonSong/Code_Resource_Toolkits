@@ -9,6 +9,7 @@
 #import "SettingsViewController.h"
 #import "WebViewController.h"
 #import "shareItemManager.h"
+#import "EnterpriseListViewController.h"
 #import <Parse/Parse.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 
@@ -19,7 +20,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *TermsOfServiceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *SystemAlertLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *SystemAlertSwitch;
+@property (weak, nonatomic) IBOutlet UILabel *EnterPriseLabel;
 @property (weak, nonatomic) IBOutlet UILabel *LogoutLabel;
+
 
 @end
 
@@ -34,6 +37,7 @@
     self.PrivacyPolicyLabel.font = [UIFont fontWithName:@"OpenSans" size:16.0];
     self.TermsOfServiceLabel.font = [UIFont fontWithName:@"OpenSans" size:16.0];
     self.SystemAlertLabel.font = [UIFont fontWithName:@"OpenSans" size:16.0];
+    self.EnterPriseLabel.font = [UIFont fontWithName:@"OpenSans" size:16.0];
     self.LogoutLabel.font = [UIFont fontWithName:@"OpenSans-Light" size:17.0];
     
     self.tableView.backgroundColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0];
@@ -44,7 +48,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -66,9 +70,9 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    UIView * headerView = [[UIView alloc] init];
-    headerView.backgroundColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0];
-    return headerView;
+    UIView * footerView = [[UIView alloc] init];
+    footerView.backgroundColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0];
+    return footerView;
 }
 
 #pragma mark - Table view delegate
@@ -103,6 +107,11 @@
         }
         [self.navigationController pushViewController:WebVC animated:YES];
     }else if(indexPath.section == 2){
+        UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        EnterpriseListViewController * enterpriseListVC = [storyboard instantiateViewControllerWithIdentifier:@"EnterpriseList"];
+        [self.navigationController pushViewController:enterpriseListVC animated:YES];
+    }
+    else if(indexPath.section == 3){
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         UIActionSheet * logoutSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Confirm to logout?",@"logout alert message") delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", @"cancel") destructiveButtonTitle:NSLocalizedString(@"Log Out", @"log out string") otherButtonTitles:nil];
         [logoutSheet showInView:self.view];

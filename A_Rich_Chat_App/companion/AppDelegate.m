@@ -17,6 +17,8 @@
 
 #import  <AWSiOSSDKv2/AWSCore.h>
 #import <AWSiOSSDKv2/AWSCredentialsProvider.h>
+#import <MobileAppTracker/MobileAppTracker.h>
+#import <AdSupport/AdSupport.h>
 
 @interface AppDelegate ()
 
@@ -62,6 +64,29 @@
         [application registerForRemoteNotificationTypes:myTypes];
     }
     
+    // Mobile App Tracker Setup
+    [MobileAppTracker initializeWithMATAdvertiserId:MATAdvertiserId
+                                   MATConversionKey:MATConversionKey];
+    
+    // Pass the Apple Identifier for Advertisers (IFA) to MAT; enables accurate 1-to-1 attribution.
+    // REQUIRED for attribution on iOS devices.
+    [MobileAppTracker setAppleAdvertisingIdentifier:[[ASIdentifierManager sharedManager] advertisingIdentifier]
+                         advertisingTrackingEnabled:[[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]];
+    
+    // Check if deferred deeplink can be opened, with a max timeout value in seconds
+    // Uncomment this line if your MAT account has enabled deferred deeplinks
+    //[MobileAppTracker checkForDeferredDeeplinkWithTimeout:0.75];
+    
+    // If your app already has a pre-existing user base before you implement the MAT SDK, then
+    // identify the pre-existing users with this code snippet.
+    // Otherwise, MAT counts your pre-existing users as new installs the first time they run your app.
+    // Omit this section if you're upgrading to a newer version of the MAT SDK.
+    // This section only applies to NEW implementations of the MAT SDK.
+    BOOL isExistingUser = [PFUser currentUser] == nil? NO : YES;
+    if (isExistingUser) {
+        [MobileAppTracker setExistingUser:YES];
+    }
+    
     //add updating badge number listener
     [[NSNotificationCenter defaultCenter]
      addObserver:self
@@ -93,6 +118,9 @@
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation {
+    
+    [MobileAppTracker applicationDidOpenURL:[url absoluteString] sourceApplication:sourceApplication];
+    
     return [FBAppCall handleOpenURL:url
                   sourceApplication:sourceApplication
                         withSession:[PFFacebookUtils session]];
@@ -106,6 +134,9 @@
     PFInstallation * currentInstallation = [PFInstallation currentInstallation];
     currentInstallation.badge = 0;
     [currentInstallation saveInBackground];
+    
+    // MAT will not function without the measureSession call included
+    [MobileAppTracker measureSession];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

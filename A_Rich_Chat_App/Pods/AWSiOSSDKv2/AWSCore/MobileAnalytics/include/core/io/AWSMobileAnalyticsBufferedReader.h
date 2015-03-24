@@ -1,5 +1,5 @@
 /*
- * Copyright 2010-2014 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2010-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License").
  * You may not use this file except in compliance with the License.
@@ -18,7 +18,8 @@
 FOUNDATION_EXPORT NSString * const AWSBufferedReaderErrorDomain;
 
 typedef NS_ENUM(NSInteger, AWSBufferedReaderErrorCodes) {
-    AWSBufferedReaderErrorCode_IOStreamClosed = 0
+    AWSBufferedReaderErrorCode_IOStreamClosed = 0,
+    AWSBufferedReaderErrorCode_UnableToParseString = 1,
 };
 
 @interface AWSMobileAnalyticsBufferedReader : NSObject

@@ -21,8 +21,12 @@ NSString *const S3BucketName = @"XXXXX";
 NSString *const S3BucketURLPrefix = @"XXXXX";
 
 //Parse credentials
-NSString *const ParseMode = @"Dev";
+NSString *const ParseMode = @"XXXXX";
 NSString *const ParseDEVAppID = @"XXXXX";
 NSString *const ParseDEVClientKey = @"XXXXX";
 NSString *const ParseLiveAppID = @"XXXXX";
 NSString *const ParseLiveClientKey = @"XXXXX";
+
+//MAT credentials
+NSString *const MATAdvertiserId = @"XXXXX";
+NSString *const MATConversionKey = @"XXXXX";

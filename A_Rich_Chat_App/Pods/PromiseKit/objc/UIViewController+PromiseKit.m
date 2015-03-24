@@ -2,6 +2,7 @@
 #import <objc/message.h>
 #import <objc/runtime.h>
 #import "PromiseKit/Promise.h"
+#import <UIKit/UIStoryboardSegue.h>
 #import <UIKit/UINavigationController.h>
 #import <UIKit/UIImagePickerController.h>
 #import "UIViewController+PromiseKit.h"
@@ -116,7 +117,7 @@ static void classOverridingSelector(const char* newClassPrefix, id target, SEL o
         struct objc_super objcSuper;
         objcSuper.receiver = self;
         objcSuper.super_class = zuper;
-        objc_msgSendSuper(&objcSuper, prepareForSegueSelector, segue, sender);
+        ((void(*)(id, SEL, id, id))objc_msgSendSuper)((__bridge id)(&objcSuper), prepareForSegueSelector, segue, sender);
     }
 }
 
