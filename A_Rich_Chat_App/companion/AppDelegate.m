@@ -15,8 +15,8 @@
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 #import <HockeySDK/HockeySDK.h>
 
-#import  <AWSiOSSDKv2/AWSCore.h>
-#import <AWSiOSSDKv2/AWSCredentialsProvider.h>
+#import <AWSCore.h>
+#import <AWSCredentialsProvider.h>
 #import <MobileAppTracker/MobileAppTracker.h>
 #import <AdSupport/AdSupport.h>
 
@@ -65,8 +65,8 @@
     }
     
     // Mobile App Tracker Setup
-    [MobileAppTracker initializeWithMATAdvertiserId:MATAdvertiserId
-                                   MATConversionKey:MATConversionKey];
+    [MobileAppTracker initializeWithMATAdvertiserId:@"92278"
+                                   MATConversionKey:@"a53d43f0852c6d6348d875815b2e8acd"];
     
     // Pass the Apple Identifier for Advertisers (IFA) to MAT; enables accurate 1-to-1 attribution.
     // REQUIRED for attribution on iOS devices.

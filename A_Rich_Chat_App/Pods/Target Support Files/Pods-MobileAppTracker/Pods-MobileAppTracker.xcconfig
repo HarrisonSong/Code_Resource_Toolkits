@@ -1,2 +1,2 @@
 PODS_MOBILEAPPTRACKER_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/MobileAppTracker"
-PODS_MOBILEAPPTRACKER_OTHER_LDFLAGS = -l"MobileAppTracker-3.8" -framework "AdSupport" -framework "CoreTelephony" -framework "MobileCoreServices" -framework "SystemConfiguration" -framework "UIKit" -framework "iAd"
+PODS_MOBILEAPPTRACKER_OTHER_LDFLAGS = -l"MobileAppTracker-3.8.1" -framework "AdSupport" -framework "CoreTelephony" -framework "MobileCoreServices" -framework "SystemConfiguration" -framework "UIKit" -framework "iAd"

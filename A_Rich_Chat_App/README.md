@@ -1,2 +1,2 @@
-A rich chat app
+Companion-Native
 ================

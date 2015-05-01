@@ -30,7 +30,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import <MobileCoreServices/UTCoreTypes.h>
 #import <AssetsLibrary/AssetsLibrary.h>
-#import <AWSiOSSDKv2/S3.h>
+#import <AWSS3.h>
 #import "Credential.h"
 
 #define MESSAGE_CONTAINER_CORNER_RADIUS 5

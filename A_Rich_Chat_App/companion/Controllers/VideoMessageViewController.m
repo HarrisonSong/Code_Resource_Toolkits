@@ -19,7 +19,7 @@
 #import <MobileCoreServices/UTCoreTypes.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
-#import <AWSiOSSDKv2/S3.h>
+#import <AWSS3.h>
 #import "Credential.h"
 
 @interface VideoMessageViewController () <UITextViewDelegate>
